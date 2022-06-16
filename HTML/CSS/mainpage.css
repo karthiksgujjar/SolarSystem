@@ -6,31 +6,60 @@ body {
   margin: 0;
   font-family: georgia;
 }
-
-.sun img{
+.sun{                         /*sun*/
+  display: inline-block; 
+  transform: scale(0.45);
+  margin-left: 20%;
+  filter: brightness(1.1);
+  
+}
+#first{                      /*sun*/
   display: inline-block;
-  image-rendering:crisp-edges;
-  margin-left: 1px;
-  margin-top: 20px;
-  object-fit: contain;
-  object-position:center;
-  height: 150px;
-  width: 100%;
-  margin-top: 200px;
-  transform-origin: center;
-  transition: all 3s ease-in-out;
-  transform: rotate(360deg);
-} 
-/* this code rotates sun */
-#mrsu {
-  -webkit-animation: rotation 550s infinite linear;
+  top: 120px;
+  cursor: pointer;
+  
 }
 
-@-webkit-keyframes rotation {
+.mercury{                    /*mercury*/
+  display: inline-block;
+  transform: scale(0.1);
+  position: relative;
+  top: -650px;
+  left: -620px;
+  filter: brightness(1.4);
+  
+}
+
+#second{
+  display: inline-block;
+  cursor: pointer;
+  
+ 
+}
+
+#first {                                  /*sun rotation*/
+  animation: rotation 450s infinite linear;
+}
+
+#second {
+  animation: rotation-1 800s infinite linear;
+
+}
+
+@keyframes rotation {
   from {
       -webkit-transform: rotate(0deg);
   }
   to {
-      -webkit-transform: rotate(359deg);
+      -webkit-transform: rotate(360deg);
   }
 }
+ @keyframes rotation-1 {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+  }
+  
+ }
