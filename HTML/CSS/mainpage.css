@@ -2,19 +2,15 @@
   box-sizing: border-box;
   
   }
-  .bg{
-    overflow: hidden;
-    width: auto;
-    height: max-content;
-    justify-content: center;
-  }
-  .bg video{
-    display: flex;
-    position: absolute;
+  #background-video{
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
-    width: 100%;
-  }
-
+    position:fixed;
+    width: fit-content;
+    height: fit-content;
+    }
+  
   .head{
     margin-top: -1in;
   }
@@ -69,12 +65,12 @@ body {
   bottom: 53in;
 }
 
-.earth{
+.earth{                             /*earth*/
   display: inline-block;
   cursor: pointer;
   transform: scale(1.5);
 }
-#fourth{
+#fourth{                           /*earth*/
   display: inline-block;
   position: relative;
   bottom:120in;
@@ -93,6 +89,9 @@ body {
   animation: rotation-2 50s infinite linear;
 }
 
+#fourth{                                   /*earth rotation*/
+  animation: rotation-3 50s infinite linear;
+}
 @keyframes rotation {
   from {
       -webkit-transform: rotate(0deg);
@@ -117,4 +116,13 @@ body {
   to{
     -webkit-transform: rotate(360deg);
   }
+}
+@keyframes rotation-3 {
+from{
+  -webkit-transform: rotate(0deg);
+}
+to{
+  -webkit-transform: rotate(360deg);
+}
+
 }
