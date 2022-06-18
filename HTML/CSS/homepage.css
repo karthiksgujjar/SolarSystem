@@ -1,0 +1,28 @@
+body
+{
+    background-image: url("/home/karthik/SolarSystemProject/SolarSystem/HTML/Images/sky_background.jpg");
+    color: aliceblue;
+}
+
+img
+{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid green;
+}
+
+p
+{
+    text-align: justify;
+    font-size: 30px;
+}
+
+h2
+{
+    font-size: 40px;
+    font-weight: bold;
+    color: blueviolet;
+}
