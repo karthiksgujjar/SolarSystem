@@ -1,49 +1,96 @@
 * {
   box-sizing: border-box;
+  
+  }
+  .bg{
+    overflow: hidden;
+    width: auto;
+    height: max-content;
+    justify-content: center;
+  }
+  .bg video{
+    display: flex;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
   }
 
+  .head{
+    margin-top: -1in;
+  }
 body { 
   margin: 0;
   font-family: georgia;
+ 
 }
 .sun{                         /*sun*/
   display: inline-block; 
-  transform: scale(0.45);
+  transform: scale(0.50);
   margin-left: 20%;
   filter: brightness(1.1);
-  
+  image-rendering: crisp-edges;
 }
 #first{                      /*sun*/
   display: inline-block;
-  top: 120px;
   cursor: pointer;
+  position: relative;
+  right: -1.5in;
+  
   
 }
 
 .mercury{                    /*mercury*/
   display: inline-block;
   transform: scale(0.1);
-  position: relative;
-  top: -650px;
-  left: -620px;
   filter: brightness(1.4);
   
 }
 
-#second{
+#second{                         /*mercury*/
   display: inline-block;
   cursor: pointer;
+  position: relative;
+  right: 81in;
+  bottom: 140in;
   
  
+}
+.venus{                               /*venus*/
+  display: inline-block;
+  transform: scale(1.3);
+  
+  
+}
+#third{                               /*venus*/
+  display: inline-block;
+  cursor: pointer;
+  position:relative;
+  left: -20in;
+  bottom: 53in;
+}
+
+.earth{
+  display: inline-block;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+#fourth{
+  display: inline-block;
+  position: relative;
+  bottom:120in;
 }
 
 #first {                                  /*sun rotation*/
   animation: rotation 450s infinite linear;
 }
 
-#second {
+#second {                                 /*mercury rotation*/
   animation: rotation-1 800s infinite linear;
 
+}
+
+#third{                                   /*venus rotation*/
+  animation: rotation-2 50s infinite linear;
 }
 
 @keyframes rotation {
@@ -62,4 +109,12 @@ body {
     -webkit-transform: rotate(360deg);
   }
   
- }
+}
+@keyframes rotation-2{
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+  }
+}
