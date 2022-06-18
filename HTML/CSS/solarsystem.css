@@ -16,6 +16,15 @@ body {
   position: absolute;
   
 }
+
+#back
+{
+    height: 0.8in;
+    width: 0.8in;
+    position: absolute;
+    top: -3.2in;
+    left: -4.3in;
+}
 .sun{                         /*sun*/
   display: inline-block; 
   transform: scale(0.50);
