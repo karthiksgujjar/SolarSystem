@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Solar System - Venus</title>
+<link rel="stylesheet" type="text/css" href="CSS/planets.css">
+</head>
+<body>
+
+<div class="head">
+    <a href="solarsystem.html" title="Go back to Solar System"><img id="back" src="Images/Icons/back.png"></a>
+    <span id="pname">VENUS-The Hottest</span>
+    <a href="homepage.html" title="Go back to Homepage"><img id="home" src="Images/Icons/home.png"></a>
+</div>
+
+<img id="pimg" src="Images/earth.jpg"> <br>
+
+
+
+<table id="edata">
+    <tr>
+        <th>Age</th>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Mass</th>
+        <td title=""></td>
+    </tr>
+    <tr>
+        <th>Diameter</th>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Distance from Sun</th>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Distance from Earth</th>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Temperature</th>
+        <td></td>
+    </tr>
+</table>
+
+<br><br>
+
+<h3>10 Need-to-Know Things About the Venus</h3>
+
+
+
+
+
+<br><br>
+
+<h3>Missions</h3>
+
+<table border="1">
+    <tr>
+        <th>SpaceCraft Name</th>
+        <th>Organization</th>
+        <th>Launch Date</th>
+        <th>Type</th>
+        <th>Status</th>
+        <th>Duration</th>
+        <th>Notes</th>
+        <th>Launch Site</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</body>
+</html>
