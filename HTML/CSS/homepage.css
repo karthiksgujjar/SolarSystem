@@ -11,7 +11,6 @@ img
     margin-left: auto;
     margin-right: auto;
     display: block;
-    border: 1px solid green;
 }
 
 p
@@ -25,4 +24,12 @@ h2
     font-size: 40px;
     font-weight: bold;
     color: blueviolet;
+}
+
+video
+{
+    height: 480px;
+    width: 1080px;
+    display: block;
+    margin: auto;
 }
