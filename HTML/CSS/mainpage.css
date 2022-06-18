@@ -11,77 +11,127 @@
     height: fit-content;
     }
   
-  .head{
-    margin-top: -1in;
-  }
 body { 
   margin: 0;
-  font-family: georgia;
- 
+  position: relative;
+  
 }
 .sun{                         /*sun*/
   display: inline-block; 
   transform: scale(0.50);
-  margin-left: 20%;
   filter: brightness(1.1);
   image-rendering: crisp-edges;
 }
 #first{                      /*sun*/
   display: inline-block;
   cursor: pointer;
-  position: relative;
-  right: -1.5in;
-  
+  position: absolute;
+  top: 5in;
+  left: 12.5in;
   
 }
 
 .mercury{                    /*mercury*/
   display: inline-block;
   transform: scale(0.1);
-  filter: brightness(1.4);
   
 }
 
 #second{                         /*mercury*/
   display: inline-block;
   cursor: pointer;
-  position: relative;
-  right: 81in;
-  bottom: 140in;
+  position: absolute;
   
- 
 }
 .venus{                               /*venus*/
   display: inline-block;
   transform: scale(1.3);
   
-  
 }
 #third{                               /*venus*/
+  position:absolute;
   display: inline-block;
   cursor: pointer;
-  position:relative;
-  left: -20in;
-  bottom: 53in;
 }
 
 .earth{                             /*earth*/
   display: inline-block;
   cursor: pointer;
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 #fourth{                           /*earth*/
   display: inline-block;
-  position: relative;
-  bottom:120in;
+  position: absolute;
+  top: 24in;
+  left:70in;
+}
+.mars{                              /*mars*/
+  display: inline-block;
+  transform: scale(1.8);
 }
 
+#sixth{                              /*mars*/
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+ 
+}
+
+.jupiter{                           /*jupoter*/
+  display: inline-block;
+  cursor: pointer;
+}
+#seventh{                           /*jupiter*/
+  display: inline-block;
+  position:absolute;
+ left: 100in;
+}
+.saturn{                            /*saturn*/
+  display: inline-block;
+  cursor: pointer;
+  transform: scaleX(1.5);
+  
+
+}
+#eight{                            /*saturn*/
+  display: inline-block;
+  position: absolute;
+  left: 100in;
+}
+.uranus{                           /*uranus*/
+  display: inline-block;
+}
+#ninth{                            /*uranus*/
+  display: inline-block;
+  position: absolute;
+
+}
+.neptune{                          /*neptune*/
+  display: inline-block;
+
+}
+#tenth{                           /*neptune*/
+  display: inline-block;
+  position: absolute;
+  
+}
+.moon{                  
+display: inline-block;
+transform: scale(0.45);
+cursor: pointer;
+}
+#fifth{
+  display: inline-block;
+  position: relative;
+  top: -17in;
+  left: 78in;
+}
 #first {                                  /*sun rotation*/
   animation: rotation 450s infinite linear;
 }
 
 #second {                                 /*mercury rotation*/
-  animation: rotation-1 800s infinite linear;
+  animation: rotation-1 10s infinite linear;
 
 }
 
@@ -92,6 +142,10 @@ body {
 #fourth{                                   /*earth rotation*/
   animation: rotation-3 50s infinite linear;
 }
+#fifth{
+  animation: rotation-4 10s infinite linear;
+}
+
 @keyframes rotation {
   from {
       -webkit-transform: rotate(0deg);
@@ -124,5 +178,14 @@ from{
 to{
   -webkit-transform: rotate(360deg);
 }
+
+}
+@keyframes rotation-4 {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+  }
 
 }
