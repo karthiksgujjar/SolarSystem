@@ -40,7 +40,6 @@ body
     filter: brightness(1.1);
     cursor: pointer;
     animation: rotation 450s infinite linear;
-    border: 1px solid green;
 }
 
 table
