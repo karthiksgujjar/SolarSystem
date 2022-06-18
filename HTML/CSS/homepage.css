@@ -6,8 +6,9 @@ body
 
 img
 {
-    width: 400px;
-    height: 400px;
+    height: 480px;
+    width: 1080px;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -24,12 +25,4 @@ h2
     font-size: 40px;
     font-weight: bold;
     color: blueviolet;
-}
-
-video
-{
-    height: 480px;
-    width: 1080px;
-    display: block;
-    margin: auto;
 }

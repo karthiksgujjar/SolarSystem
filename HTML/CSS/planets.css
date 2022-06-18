@@ -42,6 +42,16 @@ body
     animation: rotation 450s infinite linear;
 }
 
+#acd
+{
+    height: 480px;
+    width: 1080px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 table
 {
     margin:auto;
