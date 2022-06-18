@@ -42,6 +42,14 @@ body
     animation: rotation 450s infinite linear;
 }
 
+#pimg1
+{
+    height: 400px;
+    width: 400px;
+    padding: 5px;
+    float: left;
+}
+
 #acd
 {
     height: 480px;
@@ -56,6 +64,24 @@ table
 {
     margin:auto;
     font-size: 35px;
+}
+
+th, td
+{
+    text-align: center;
+    padding: 10px;
+}
+
+#none
+{
+    font-size:larger;
+}
+
+h2
+{
+    font-size: 40px;
+    font-weight: bold;
+    color: blueviolet;
 }
 
 h3
@@ -75,12 +101,6 @@ p
 {
     text-align: justify;
     font-size: 30px;
-}
-
-th, td
-{
-    text-align: center;
-    padding: 10px;
 }
 
 @keyframes rotation {
