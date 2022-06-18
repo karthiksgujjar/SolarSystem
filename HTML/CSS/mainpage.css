@@ -2,19 +2,15 @@
   box-sizing: border-box;
   
   }
-  .bg{
-    overflow: hidden;
-    width: auto;
-    height: max-content;
-    justify-content: center;
-  }
-  .bg video{
-    display: flex;
-    position: absolute;
+  #background-video{
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
-    width: 100%;
-  }
-
+    position:fixed;
+    width: fit-content;
+    height: fit-content;
+    }
+  
   .head{
     margin-top: -1in;
   }
