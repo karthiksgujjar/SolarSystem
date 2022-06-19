@@ -38,19 +38,20 @@ body
     float: left;
     transform: scale(0.45);
     filter: brightness(1.1);
-    cursor: pointer;
     animation: rotation 450s infinite linear;
 }
 
-#pimg1
+#d
 {
-    height: 400px;
-    width: 400px;
-    padding: 5px;
-    float: left;
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    transform: scale(0.45);
+    filter: brightness(1.1);
+    animation: rotation 450s infinite linear;
 }
 
-#acd
+#hac
 {
     height: 480px;
     width: 1080px;
