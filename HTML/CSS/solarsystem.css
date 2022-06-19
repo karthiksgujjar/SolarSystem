@@ -152,7 +152,7 @@ cursor: pointer;
   left: 152in;
 }
 #first {                                  /*sun rotation*/
-  animation: rotation 30s infinite linear;
+  animation: rotation 400s infinite linear;
 }
 
 #second {                                 /*mercury rotation*/
