@@ -16,18 +16,18 @@ body
     float:left;
 }
 
+#pname
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+
 #home
 {
     height: 25px;
     width: 30px;
     float: right;
 
-}
-
-#pname
-{
-    font-size: 40px;
-    font-weight: bold;
 }
 
 #pimg
@@ -41,24 +41,10 @@ body
     animation: rotation 450s infinite linear;
 }
 
-#d
+#content
 {
-    height: 300px;
-    width: 300px;
-    padding: 30px;
-    transform: scale(0.45);
-    filter: brightness(1.1);
-    animation: rotation 450s infinite linear;
-}
-
-#hac
-{
-    height: 480px;
-    width: 1080px;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    text-align: justify;
+    font-size: 30px;
 }
 
 table
@@ -73,19 +59,7 @@ th, td
     padding: 10px;
 }
 
-#none
-{
-    font-size:larger;
-}
-
-h2
-{
-    font-size: 40px;
-    font-weight: bold;
-    color: blueviolet;
-}
-
-h3
+#heading
 {
     text-align: center;
     font-size: 40px;
@@ -98,11 +72,41 @@ ol
     font-size: 30px;
 }
 
-p
+/* Especially for homepage,asteroids,comets,dwarfplanets files*/
+
+#none /*for tab area in homepage.html*/
 {
-    text-align: justify;
-    font-size: 30px;
+    font-size:larger;
 }
+
+h2
+{
+    font-size: 40px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+
+#hac /*for homepage,comets,dwarf files*/
+{
+    height: 480px;
+    width: 1080px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#d /*for dwarfplanets.html: planets row*/
+{
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    transform: scale(0.45);
+    filter: brightness(1.1);
+    animation: rotation 450s infinite linear;
+}
+
 
 @keyframes rotation {
     from {
