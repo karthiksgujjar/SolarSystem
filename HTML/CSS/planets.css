@@ -38,7 +38,7 @@ body
     float: left;
     transform: scale(0.45);
     filter: brightness(1.1);
-    animation: rotation 450s infinite linear;
+    animation: rotation 150s infinite linear;
 }
 
 #pimg1
@@ -74,8 +74,10 @@ th, td
     font-weight: bold;
 }
 
-ol
+ol li
 {
+    padding-left: 10px;
+    padding-bottom: 10px;
     text-align: justify;
     font-size: 30px;
 }
@@ -86,6 +88,18 @@ ol
 {
     font-size:larger;
 }
+
+a{
+    text-decoration: none;
+    color: blueviolet;
+  }
+
+th a:hover{
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
 
 h2
 {
@@ -99,7 +113,6 @@ h2
 {
     height: 480px;
     width: 1080px;
-    padding: 20px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -112,7 +125,7 @@ h2
     padding: 30px;
     transform: scale(0.45);
     filter: brightness(1.1);
-    animation: rotation 450s infinite linear;
+    animation: rotation 200s infinite linear;
 }
 
 
