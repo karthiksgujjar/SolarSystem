@@ -7,8 +7,6 @@
     height: 100%;
     object-fit: cover;
     position:fixed;
-    width: fit-content;
-    height: fit-content;
     }
   
 body { 
@@ -19,11 +17,12 @@ body {
 
 #back                         /*back navigation icon*/
 {
-    height: 0.8in;
-    width: 0.8in;
+    height: 0.5in;
+    width: 0.5in;
     position: absolute;
-    top: -3.2in;
-    left: -4.3in;
+    top: -2.1in;
+    left: -2.8in;
+
 }
 .sun{                         /*sun*/
   display: inline-block; 

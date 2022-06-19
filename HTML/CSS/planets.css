@@ -1,6 +1,6 @@
 body
 { 
-    background-image: url("D:/solar_git/SolarSystem/HTML/Images/sky_background.jpg");
+    background-image: url("/home/karthik/SolarSystemProject/SolarSystem/HTML/Images/sky_background.jpg");
     color: aliceblue;
 }
 
@@ -39,6 +39,14 @@ body
     transform: scale(0.45);
     filter: brightness(1.1);
     animation: rotation 450s infinite linear;
+}
+
+#pimg1
+{
+    height: 400px;
+    width: 400px;
+    padding: 5px;
+    float: left;
 }
 
 #content
