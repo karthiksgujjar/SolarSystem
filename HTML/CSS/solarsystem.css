@@ -32,10 +32,10 @@ body {
 }
 #first{                      /*sun*/
   display: inline-block;
-  cursor: pointer;
   position: absolute;
   top: 3in;
   left: 9in;
+  animation: rotation 400s infinite linear; /*sun rotation*/
   
 }
 
@@ -47,10 +47,10 @@ body {
 
 #second{                         /*mercury*/
   display: inline-block;
-  cursor: pointer;
   position: absolute;
   left:100in;
   top: 59in;
+  animation: rotation-1 65s infinite linear; /*mercury rotation*/
 }
 .venus{                               /*venus*/
   display: inline-block;
@@ -60,15 +60,14 @@ body {
 #third{                               /*venus*/
   position:absolute;
   display: inline-block;
-  cursor: pointer;
   left: 100in;
   top: -10in;
+  animation: rotation-2 120s infinite linear;  /*venus rotation*/
   
 }
 
 .earth{                             /*earth*/
   display: inline-block;
-  cursor: pointer;
   transform: scale(1.3);
 }
 #fourth{                           /*earth*/
@@ -76,7 +75,19 @@ body {
   position: absolute;
   left: 45in;
   bottom: 28in;
+  animation: rotation-3 100s infinite linear;  /*earth rotation*/
   
+}
+.moon{                            /*moon*/
+display: inline-block;
+transform: scale(0.45);
+}
+#fifth{                            /*moon*/
+  display: inline-block;
+  position: relative;
+  bottom: 106in;
+  left: 152in;
+  animation: rotation-4 200s infinite linear;  /*moon rotation*/
 }
 .mars{                              /*mars*/
   display: inline-block;
@@ -86,14 +97,13 @@ body {
 #sixth{                              /*mars*/
   display: inline-block;
   position: absolute;
-  cursor: pointer;
   top: 15in;
   left: -6in;
+  animation: rotation-5 250s infinite linear;   /*mars rotation*/
 }
 
 .jupiter{                           /*jupoter*/
   display: inline-block;
-  cursor: pointer;
   transform: scale(2.7);
 }
 #seventh{                           /*jupiter*/
@@ -101,11 +111,11 @@ body {
   position:absolute;
   top: 18in;
   left: 55in;
+  animation: rotation-6 30s infinite linear;  /*jupiter rotation*/
 
 }
 .saturn{                            /*saturn*/
   display: inline-block;
-  cursor: pointer;
   transform: scale(6.2);
 
 }
@@ -114,23 +124,22 @@ body {
   position: absolute;
   left: 26in;
   top: -8in;
- 
+  
 }
 .uranus{                           /*uranus*/
   display: inline-block;
   transform: scale(1.65);
-  cursor: pointer;
 }
 #ninth{                            /*uranus*/
   display: inline-block;
   position: absolute;
   right: 10in;
   top: -25in;
-
+  animation: rotation-7 10s infinite linear; /*uranus rotation*/
+  
 }
 .neptune{                          /*neptune*/
   display: inline-block;
-  cursor: pointer;
   transform: scale(2.15);
 }
 #tenth{                           /*neptune*/
@@ -138,50 +147,10 @@ body {
   position: absolute;
   top: 30in;
   right: 18in;
+  animation: rotation-8 100s infinite linear;  /* neptune rotation */
   
 }
-.moon{                            /*moon*/
-display: inline-block;
-transform: scale(0.45);
-cursor: pointer;
-}
-#fifth{                            /*moon*/
-  display: inline-block;
-  position: relative;
-  bottom: 106in;
-  left: 152in;
-}
-#first {                                  /*sun rotation*/
-  animation: rotation 400s infinite linear;
-}
 
-#second {                                 /*mercury rotation*/
-  animation: rotation-1 65s infinite linear;
-
-}
-
-#third{                                   /*venus rotation*/
-  animation: rotation-2 120s infinite linear;
-}
-
-#fourth{                                   /*earth rotation*/
-  animation: rotation-3 100s infinite linear;
-}
-#fifth{                                         /*moon rotation*/
-  animation: rotation-4 200s infinite linear;
-}
-#sixth{                                       /*mars rotation*/
-  animation: rotation-5 250s infinite linear; 
-}
-#seventh{                                       /*jupiter rotation*/
-  animation: rotation-6 30s infinite linear; 
-}
-#ninth{                                         /*uranus rotation*/
-  animation: rotation-7 10s infinite linear;
-}
-#tenth{                                         /* neptune rotation */
-  animation: rotation-8 100s infinite linear; 
-}
 @keyframes rotation {
   from {
       -webkit-transform: rotate(0deg);

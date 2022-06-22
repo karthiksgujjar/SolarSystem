@@ -1,5 +1,5 @@
-D:/solar_git/SolarSystem/HTML/Images/sky_background.jpg  //for windows in HD PC
-/home/karthik/SolarSystemProject/SolarSystem/HTML/Images/sky_background.jpg   //for linux in KS PC
+/home/harshadeshik/Downloads/git_proj/SolarSystem/HTML/Images/sky_background.jpg  //for ubuntu in HD PC
+/home/karthik/SolarSystemProject/SolarSystem/HTML/Images/sky_background.jpg   //for ubuntu in KS PC
 
 
 
