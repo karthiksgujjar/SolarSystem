@@ -11,15 +11,13 @@
   
 body { 
   margin: 0;
-  
 }
 
 #back                         /*back navigation icon*/
 { 
   position: absolute;
-  height: 40px;
-  width: 40px;
-  top: 0.5%;
+  height: 30px;
+  width: 30px;
 }
 
 #sun{                      /*sun*/
@@ -38,28 +36,28 @@ body {
 #mercury{                         /*mercury*/
   position: absolute;
   animation: rotation-1 65s infinite linear; /*mercury rotation*/
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   top: 70%;
-  left: 52%;
+  left: 50%;
 }
 
 #venus{                               /*venus*/
   position: absolute;
   animation: rotation-2 120s infinite linear;  /*venus rotation*/
-  height: 70px;
-  width:  70px;
+  height: 120px;
+  width:  120px;
   top: 25%;
-  left: 62%;
+  left: 60%;
 }
 
 #earth{                           /*earth*/
   position: absolute;
   animation: rotation-3 100s infinite linear;  /*earth rotation*/
-  height: 100px;
-  width:  100px;
-  top: 15%;
-  left: 32%;
+  height: 130px;
+  width:  130px;
+  top: 5%;
+  left: 35%;
 }
 
 
@@ -67,35 +65,35 @@ body {
   position: absolute;
   animation: rotation-4 200s infinite linear;  /*moon rotation*/
   height: 30px;
-  width:  30px;
-  top: 13%;
-  left: 36%;
+  width:  40px;
+  top: 3%;
+  left: 41%;
 }
 
 #mars{                              /*mars*/
   position: absolute;
   animation: rotation-5 250s infinite linear;   /*mars rotation*/
-  height: 100px;
-  width:  100px;
-  top: 60%;
-  left: 25%;
+  height: 90px;
+  width:  90px;
+  top: 56%;
+  left: 24%;
 }
 
 #jupiter{                           /*jupiter*/
   position: absolute;
   animation: rotation-6 30s infinite linear;  /*jupiter rotation*/
-  height: 200px;
-  width: 200px;
-  top: 65%;
-  left: 75%;
+  height: 240px;
+  width: 240px;
+  top: 62%;
+  left: 68%;
 }
 
 #saturn{                            /*saturn*/
   position: absolute;
-  height: 200px;
-  width: 200px;
-  top: 15%;
-  left: 85%;
+  height: 300px;
+  width: 450px;
+  top: 8%;
+  left: 76%;
 }
 
 #uranus{                            /*uranus*/
@@ -103,17 +101,17 @@ body {
   animation: rotation-7 10s infinite linear; /*uranus rotation*/
   height: 200px;
   width: 200px;
-  top: 15%;
-  left: 8%;
+  top: 18%;
+  left: 12%;
 }
 
 #neptune{                           /*neptune*/
   position: absolute;
   animation: rotation-8 100s infinite linear;  /* neptune rotation */
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   top: 75%;
-  left: 2%;
+  left: 3%;
 }
 
 @keyframes rotation {
