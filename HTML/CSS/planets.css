@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap'); /*heading font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300&display=swap');
+
+#heading
+{
+    font-family: 'Modern Antiqua', cursive;
+    font-size: 40px;
+    /*background-color: rgba(255, 255, 255, 0.3);*/
+    color: blueviolet;
+    font-weight: bold;
+}
+
+#content
+{
+    font-family: 'Stoke', serif;
+    text-align: justify;
+    font-size: 25px;
+    /* background-color: rgba(161, 154, 154, 0.1); */
+}
+
 body
 { 
-    background-image: url("/home/harshadeshik/Downloads/git_proj/SolarSystem/HTML/Images/sky_background.jpg");
+    background-image: url("/home/karthik/Downloads/test.jpg");
     color: aliceblue;
+    background-size: contain;
 }
 
 .head
@@ -49,11 +71,6 @@ body
     float: left;
 }
 
-#content
-{
-    text-align: justify;
-    font-size: 30px;
-}
 
 table
 {
@@ -61,25 +78,27 @@ table
     font-size: 35px;
 }
 
-th, td
+th
+{
+    text-align: center;
+    padding: 10px;
+    background-image: url("/home/karthik/Telegram Desktop/test.jpg");
+}
+
+td
 {
     text-align: center;
     padding: 10px;
 }
 
-#heading
-{
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-}
 
 ol li
 {
     padding-left: 10px;
     padding-bottom: 10px;
     text-align: justify;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: 'Stoke', serif;
 }
 
 /* Especially for homepage,asteroids,comets,dwarfplanets files*/
