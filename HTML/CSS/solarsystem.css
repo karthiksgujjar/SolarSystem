@@ -1,15 +1,18 @@
-* {
+*
+{
   box-sizing: border-box;
+}
+
+#background-video
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position:fixed;
+}
   
-  }
-  #background-video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position:fixed;
-  }
-  
-body { 
+body
+{ 
   margin: 0;
 }
 
@@ -20,40 +23,43 @@ body {
   width: 30px;
 }
 
-#sun{                      /*sun*/
+#sun
+{
   position: absolute;
-  animation: rotation 400s infinite linear; /*sun rotation*/
-  
+  animation: rotation 300s infinite linear; /*sun rotation*/
   height: 400px;
   width: 400px;
-  filter: brightness(1.1);
-  image-rendering: crisp-edges;
   left: 36%;
   top: 30%;
+  filter: brightness(1.1);
+  image-rendering: crisp-edges;
 }
 
 
-#mercury{                         /*mercury*/
+#mercury
+{
   position: absolute;
-  animation: rotation-1 65s infinite linear; /*mercury rotation*/
+  animation: rotation-1 80s infinite linear; /*mercury rotation*/
   height: 60px;
   width: 60px;
   top: 70%;
   left: 50%;
 }
 
-#venus{                               /*venus*/
+#venus
+{
   position: absolute;
-  animation: rotation-2 120s infinite linear;  /*venus rotation*/
+  animation: rotation-2 90s infinite linear;  /*venus rotation*/
   height: 120px;
   width:  120px;
   top: 25%;
   left: 60%;
 }
 
-#earth{                           /*earth*/
+#earth
+{
   position: absolute;
-  animation: rotation-3 100s infinite linear;  /*earth rotation*/
+  animation: rotation-3 60s infinite linear;  /*earth rotation*/
   height: 130px;
   width:  130px;
   top: 5%;
@@ -61,131 +67,135 @@ body {
 }
 
 
-#moon{                            /*moon*/
+#moon
+{
   position: absolute;
-  animation: rotation-4 200s infinite linear;  /*moon rotation*/
+  animation: rotation-4 120s infinite linear;  /*moon rotation*/
   height: 30px;
   width:  40px;
   top: 3%;
   left: 41%;
 }
 
-#mars{                              /*mars*/
+#mars
+{
   position: absolute;
-  animation: rotation-5 250s infinite linear;   /*mars rotation*/
+  animation: rotation-5 70s infinite linear;   /*mars rotation*/
   height: 90px;
   width:  90px;
   top: 56%;
   left: 24%;
 }
 
-#jupiter{                           /*jupiter*/
+#jupiter
+{
   position: absolute;
-  animation: rotation-6 30s infinite linear;  /*jupiter rotation*/
+  animation: rotation-6 10s infinite linear;  /*jupiter rotation*/
   height: 240px;
   width: 240px;
   top: 62%;
   left: 68%;
 }
 
-#saturn{                            /*saturn*/
+#saturn
+{
   position: absolute;
-  height: 300px;
+  height: 250px;
   width: 450px;
   top: 8%;
   left: 76%;
 }
 
-#uranus{                            /*uranus*/
+#uranus
+{
   position: absolute;
-  animation: rotation-7 10s infinite linear; /*uranus rotation*/
+  animation: rotation-7 40s infinite linear; /*uranus rotation*/
   height: 200px;
   width: 200px;
   top: 18%;
   left: 12%;
 }
 
-#neptune{                           /*neptune*/
+#neptune
+{
   position: absolute;
-  animation: rotation-8 100s infinite linear;  /* neptune rotation */
+  animation: rotation-8 50s infinite linear;  /* neptune rotation */
   height: 180px;
   width: 180px;
   top: 75%;
   left: 3%;
 }
 
-@keyframes rotation {
-  from {
-      -webkit-transform: rotate(0deg);
-  }
-  to {
-      -webkit-transform: rotate(360deg);
-  }
-}
- @keyframes rotation-1 {
-  from{
-    -webkit-transform: rotate(0deg);
-  }
-  to{
-    -webkit-transform: rotate(360deg);
-  }
-  
-}
-@keyframes rotation-2{
-  from{
-    -webkit-transform: rotate(0deg);
-  }
-  to{
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes rotation-3 {
-from{
-  -webkit-transform: rotate(0deg);
-}
-to{
-  -webkit-transform: rotate(360deg);
+
+
+@keyframes rotation
+{
+  from
+  { -webkit-transform: rotate(0deg); }
+  to
+  { -webkit-transform: rotate(360deg); }
 }
 
+@keyframes rotation-1
+{
+  from
+  { -webkit-transform: rotate(0deg); }
+  to
+  { -webkit-transform: rotate(360deg); }
 }
-@keyframes rotation-4 {
-  from{
-    -webkit-transform: rotate(0deg);
-  }
-  to{
-    -webkit-transform: rotate(360deg);
-  }
 
+@keyframes rotation-2
+{
+  from
+  { -webkit-transform: rotate(0deg); }
+  to
+  { -webkit-transform: rotate(360deg); }
 }
-@keyframes rotation-5 {
-  from{
-    -webkit-transform: rotate(0deg);
-  }
-  to{
-    -webkit-transform: rotate(360deg);
-  }
+
+@keyframes rotation-3
+{
+  from
+  { -webkit-transform: rotate(0deg); }
+  to
+  { -webkit-transform: rotate(360deg); }
 }
-@keyframes rotation-6 {
-  from{
-    -webkit-transform: rotate(0deg);
-  }
-  to{
-    -webkit-transform: rotate(360deg);
-  }
+
+@keyframes rotation-4
+{
+  from
+  { -webkit-transform: rotate(0deg); }
+  to
+  { -webkit-transform: rotate(360deg); }
 }
-@keyframes  rotation-7 {
-  from{
-    -webkit-transform: rotate(0deg);
-  }
-  to{
-    -webkit-transform: rotate(360deg);
-  }
+
+@keyframes rotation-5 
+{
+  from
+  { -webkit-transform: rotate(0deg); }
+  to
+  { -webkit-transform: rotate(360deg);}
 }
-@keyframes  rotation-8 {
-  from{
-    -webkit-transform: rotate(0deg);
-  }
-  to{
-    -webkit-transform: rotate(360deg);
-  }
+
+@keyframes rotation-6 
+{
+  from
+  { -webkit-transform: rotate(0deg); }
+  to
+  { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes rotation-7
+{
+  from
+  { -webkit-transform: rotate(0deg); }
+  to
+  { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes rotation-8
+{
+  from
+  { -webkit-transform: rotate(0deg); }
+  to
+  { -webkit-transform: rotate(360deg); }
 }

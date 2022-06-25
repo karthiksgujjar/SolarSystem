@@ -2,6 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300&display=swap'); /*content font*/
 
+body
+{ 
+    background-image: url("/home/karthik/SolarSystemProject/SolarSystem/HTML/Images/sky_bg.jpeg");
+    color:aliceblue;
+}
+
+.head
+{
+    text-align: center;
+}
 
 #heading
 {
@@ -11,24 +21,6 @@
     font-weight: bold;
 }
 
-#content
-{
-    font-family: 'Stoke', serif;
-    text-align: justify;
-    font-size: 25px;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-body
-{ 
-    background-image: url("/home/karthik/SolarSystemProject/SolarSystem/HTML/Images/sky_bg.jpeg");
-    color: aliceblue;
-}
-
-.head
-{
-    text-align: center;
-}
 
 #back
 {
@@ -69,6 +61,13 @@ body
     float: left;
 }
 
+#content
+{
+    font-family: 'Stoke', serif;
+    text-align: justify;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 table
 {
@@ -76,27 +75,27 @@ table
     font-size: 35px;
 }
 
-th
+th, td
 {
     text-align: center;
     padding: 10px;
 }
 
-td
+ol, li
 {
-    text-align: center;
-    padding: 10px;
-}
-
-
-ol li
-{
-    padding-left: 10px;
     padding-bottom: 10px;
     text-align: justify;
     font-size: 25px;
     font-family: 'Stoke', serif;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+@keyframes rotation 
+{
+    from
+    { -webkit-transform: rotate(0deg); }
+    to
+    { -webkit-transform: rotate(360deg); }
 }
 
 /* Especially for homepage,asteroids,comets,dwarfplanets files*/
@@ -106,27 +105,21 @@ ol li
     font-size:larger;
 }
 
-a{
+a
+{
     text-decoration: none;
     color: blueviolet;
-  }
+}
 
-th a:hover{
+th a:hover
+{
     background-color: white;
     border-radius: 5px;
     padding-top: 3px;
     padding-bottom: 3px;
-  }
-
-h2
-{
-    font-size: 40px;
-    font-weight: bold;
-    color: blueviolet;
 }
 
-
-#hac /*for homepage,comets,dwarf files*/
+#hac /*for homepage, asteroids & comets files*/
 {
     height: 480px;
     width: 1080px;
@@ -147,12 +140,3 @@ h2
     animation: rotation 200s infinite linear;
 }
 
-
-@keyframes rotation {
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-    }
-  }
