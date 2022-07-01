@@ -4,14 +4,10 @@
 
 body
 { 
-    background-image: url("/home/harshadeshik/Downloads/git_proj/SolarSystem/HTML/Images/sky_bg.jpeg");
+    background-image: url("/home/karthik/SolarSystemProject/SolarSystem/HTML/Images/sky_bg.jpeg");
     color:aliceblue;
 }
 
-table{
-    background-color: rgba(66, 65, 65, 0.4);
-    border-radius: 8px;
-}
 .head
 {
     text-align: center;
@@ -77,12 +73,14 @@ table
 {
     margin:auto;
     font-size: 35px;
+    background-color: rgba(66, 65, 65, 0.4);
+    border-radius: 8px;
 }
 
 th, td
 {
     text-align: center;
-    padding: 10px;
+    padding: 8px;
 }
 
 ol, li
@@ -94,19 +92,12 @@ ol, li
     background-color: rgba(14, 14, 14, 0.4);
 }
 
-@keyframes rotation 
-{
-    from
-    { -webkit-transform: rotate(0deg); }
-    to
-    { -webkit-transform: rotate(360deg); }
-}
-
 /* Especially for homepage,asteroids,comets,dwarfplanets files*/
 
 #none /*for tab area in homepage.html*/
 {
     font-size:larger;
+    background-color: unset;
 }
 
 a
@@ -144,3 +135,10 @@ th a:hover
     animation: rotation 200s infinite linear;
 }
 
+@keyframes rotation 
+{
+    from
+    { -webkit-transform: rotate(0deg); }
+    to
+    { -webkit-transform: rotate(360deg); }
+}
