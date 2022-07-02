@@ -20,6 +20,15 @@ body
     float:left;
 }
 
+#heading
+{
+    font-family: 'Modern Antiqua', cursive;
+    font-size: 40px;
+    color: blueviolet;
+    font-weight: bold;
+    text-align: center;
+}
+
 #home
 {
     height: 25px;
@@ -66,16 +75,6 @@ th, td
 {
     text-align: center;
     padding: 8px;
-    
-}
-
-#heading
-{
-    font-family: 'Modern Antiqua', cursive;
-    font-size: 40px;
-    color: blueviolet;
-    font-weight: bold;
-    text-align: center;
 }
 
 ol, li
@@ -89,10 +88,12 @@ ol, li
 
 /* Especially for homepage,asteroids,comets,dwarfplanets files*/
 
-#none /*for tab area in homepage.html*/
+/*for tab area in homepage.html*/
+#none 
 {
     font-size:larger;
     background-color: unset;
+    width: 100%;
 }
 
 a

@@ -1,0 +1,3 @@
+/home/harshadeshik/Downloads/git_proj/SolarSystem/HTML/Images/sky_bg.jpeg  //for ubuntu in HD PC
+/home/karthik/SolarSystemProject/SolarSystem/HTML/Images/sky_bg.jpeg   //for ubuntu in KS PC
+
