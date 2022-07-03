@@ -47,14 +47,6 @@ body
     animation: rotation 150s infinite linear;
 }
 
-#spimg /*Only for saturn.html file*/
-{
-    height: 400px;
-    width: 400px;
-    padding: 5px;
-    float: left;
-}
-
 #content
 {
     font-family: 'Stoke', serif;
@@ -86,30 +78,6 @@ ol, li
     background-color: rgba(14, 14, 14, 0.4);
 }
 
-/* Especially for homepage,asteroids,comets,dwarfplanets files*/
-
-/*for tab area in homepage.html*/
-#none 
-{
-    font-size:larger;
-    background-color: unset;
-    width: 100%;
-}
-
-a
-{
-    text-decoration: none;
-    color: blueviolet;
-}
-
-th a:hover
-{
-    background-color: white;
-    border-radius: 5px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
 #hac /*for homepage, asteroids & comets files*/
 {
     height: 480px;
@@ -119,16 +87,6 @@ th a:hover
     margin-right: auto;
     margin-bottom: 1%;
     margin-top: 1%;
-}
-
-#d /*for dwarfplanets.html: planets row*/
-{
-    height: 300px;
-    width: 300px;
-    padding: 30px;
-    transform: scale(0.45);
-    filter: brightness(1.1);
-    animation: rotation 200s infinite linear;
 }
 
 @keyframes rotation 
