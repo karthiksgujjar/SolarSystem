@@ -69,6 +69,13 @@ th, td
     padding: 8px;
 }
 
+#none 
+{
+    font-size:larger;
+    background-color: unset;
+    width: 100%;
+}
+
 ol, li
 {
     padding-bottom: 10px;
