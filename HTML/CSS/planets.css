@@ -4,40 +4,38 @@
 
 body
 { 
-    background-image: url("/home/karthik/SolarSystemProject/SolarSystem/HTML/Images/sky_bg.jpeg");
+    background-image: url("/home/harshadeshik/Downloads/git_proj/SolarSystem/HTML/Images/sky_bg.jpeg");
     color:aliceblue;
 }
-
-.head
-{
+.head{
     text-align: center;
 }
 
-#back
-{
+#back{
     height: 25px;
     width: 30px;
     float:left;
 }
 
-#heading
-{
+#heading{
     font-family: 'Modern Antiqua', cursive;
     font-size: 40px;
     color: blueviolet;
     font-weight: bold;
     text-align: center;
 }
+ul{
+    list-style: none;
+    display: flex;
+}
 
-#home
-{
+#home{
     height: 25px;
     width: 30px;
     float: right;
 }
 
-#pimg
-{
+#pimg{
     height: 400px;
     width: 400px;
     padding: 5px;
@@ -47,37 +45,27 @@ body
     animation: rotation 150s infinite linear;
 }
 
-#content
-{
+#content{
     font-family: 'Stoke', serif;
     text-align: justify;
     font-size: 25px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-table
-{
+table{
     margin:auto;
     font-size: 35px;
     background-color: rgba(66, 65, 65, 0.4);
     border-radius: 8px;
 }
 
-th, td
-{
+th, td{
     text-align: center;
     padding: 8px;
 }
 
-#none 
-{
-    font-size:larger;
-    background-color: unset;
-    width: 100%;
-}
 
-ol, li
-{
+ol, li{
     padding-bottom: 10px;
     text-align: justify;
     font-size: 25px;
@@ -85,8 +73,7 @@ ol, li
     background-color: rgba(14, 14, 14, 0.4);
 }
 
-#hac /*for homepage, asteroids & comets files*/
-{
+#hac{ /*for homepage, asteroids & comets files*/
     height: 480px;
     width: 1080px;
     display: block;
