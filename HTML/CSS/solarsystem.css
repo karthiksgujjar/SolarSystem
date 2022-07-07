@@ -147,9 +147,9 @@ body
 @keyframes rotation-2
 {
   from
-  { -webkit-transform: rotate(0deg); }
-  to
   { -webkit-transform: rotate(360deg); }
+  to
+  { -webkit-transform: rotate(0deg); }
 }
 
 @keyframes rotation-3
@@ -187,9 +187,9 @@ body
 @keyframes rotation-7
 {
   from
-  { -webkit-transform: rotate(0deg); }
-  to
   { -webkit-transform: rotate(360deg); }
+  to
+  { -webkit-transform: rotate(0deg); }
 }
 
 @keyframes rotation-8
