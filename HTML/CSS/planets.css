@@ -12,29 +12,29 @@ body
 }
 
 #back{
-    height: 25px;
-    width: 30px;
+    height: 3%;
+    width: 1.5%;
     float:left;
 }
 
 #heading{
     font-family: 'Modern Antiqua', cursive;
-    font-size: 40px;
+    font-size: 250%;
     color: blueviolet;
     font-weight: bold;
     text-align: center;
 }
 
 #home{
-    height: 25px;
-    width: 30px;
+    height: 3%;
+    width: 1.5%;
     float: right;
 }
 
 #pimg{
-    height: 400px;
-    width: 400px;
-    padding: 5px;
+    height: 45%;
+    width: 22.5%;
+    padding: 0.5%;
     float: left;
     transform: scale(0.45);
     filter: brightness(1.1);
@@ -44,14 +44,14 @@ body
 #content{
     font-family: 'Stoke', serif;
     text-align: justify;
-    font-size: 25px;
+    font-size: 150%;
 }
 
 table{
     margin:auto;
-    font-size: 35px;
+    font-size: 225%;
     background-color: rgba(66, 65, 65, 0.4);
-    border-radius: 8px;
+    border-radius: 1%;
 }
 
 th, td{
@@ -68,15 +68,15 @@ th, td{
 
 
 ol, li{
-    padding-bottom: 10px;
+    padding-bottom: 1%;
     text-align: justify;
-    font-size: 25px;
+    font-size: 125%;
     font-family: 'Stoke', serif;
 }
 
 #hac{ /*for homepage, asteroids & comets files*/
-    height: 480px;
-    width: 1080px;
+    height: 48%;
+    width: 58%;
     display: block;
     margin-left: auto;
     margin-right: auto;
