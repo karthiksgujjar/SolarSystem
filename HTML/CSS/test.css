@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+/*heading font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300&display=swap');
+/*content font*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 12% 1fr;
+    background-image: url("/HTML/Images/sky_bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5%;
+}
+
+nav a {
+    text-decoration: none;
+    color: blueviolet;
+    border-radius: 5px;
+    padding: 2px;
+    font-family: 'Stoke', serif;
+}
+
+nav a:hover {
+    background-color: blueviolet;
+    color: black;
+}
+
+main {
+    display: grid;
+    row-gap: 5%;
+}
+
+section {
+    display: grid;
+    justify-items: center;
+    row-gap: 1%;
+}
+
+
+.textCenter {
+    text-align: center;
+}
+
+.heading {
+    font-family: 'Modern Antiqua', cursive;
+    font-weight: bold;
+    justify-self: start;
+}
+
+.headingColor {
+    color: blueviolet;
+}
+
+.content {
+    font-family: 'Stoke', serif;
+    text-align: justify;
+    margin: 1%;
+}
