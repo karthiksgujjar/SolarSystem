@@ -17,7 +17,7 @@ html {
 body {
     display: grid;
     background-image: url("/HTML/Images/sky_bg.jpeg");
-    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
