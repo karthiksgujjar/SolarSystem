@@ -10,9 +10,12 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 32px;
+}
+
 body {
     display: grid;
-    grid-template-rows: 12% 1fr;
     background-image: url("/HTML/Images/sky_bg.jpeg");
     background-position: center;
     background-repeat: no-repeat;
@@ -24,6 +27,9 @@ nav {
     display: flex;
     justify-content: space-around;
     margin-top: 0.5%;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
 }
 
 nav a {
@@ -32,6 +38,7 @@ nav a {
     border-radius: 5px;
     padding: 2px;
     font-family: 'Stoke', serif;
+    font-size: 0.6em;
 }
 
 nav a:hover {
@@ -41,7 +48,7 @@ nav a:hover {
 
 main {
     display: grid;
-    row-gap: 5%;
+    row-gap: 3%;
 }
 
 section {
@@ -50,23 +57,72 @@ section {
     row-gap: 1%;
 }
 
+img{
+    max-width: 100%;
+}
 
-.textCenter {
+
+.textAligner {
     text-align: center;
 }
 
-.heading {
+.heading, .subHeading{
     font-family: 'Modern Antiqua', cursive;
     font-weight: bold;
+    font-size: 0.8em;
     justify-self: start;
+    margin: 1%;
 }
 
-.headingColor {
+
+.subHeading{
+    font-size: 0.7em;
     color: blueviolet;
 }
 
 .content {
     font-family: 'Stoke', serif;
+    font-size: 0.6em;
     text-align: justify;
     margin: 1%;
+}
+
+#hamburgerMenu{
+    display: none;
+    position: absolute;
+    top: 0.4em;
+    right: 0.7em;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+@media (max-width: 630px) {
+
+    html {
+        font-size: 24px;
+    }
+
+    nav{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a{
+        padding: 0.2em;
+    }
+
+    nav.active{
+        display: flex;
+    }
+
+    .textAligner{
+        text-align: left;
+    }
+
+    #hamburgerMenu{
+        display: flex;
+    }
 }
