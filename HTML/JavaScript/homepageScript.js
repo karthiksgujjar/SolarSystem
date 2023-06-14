@@ -6,11 +6,11 @@ let i=0;
 hamBtn.addEventListener('click', () => {
     navBar.classList.toggle('active');
     if(i%2 === 0){
-        hamImg.src = "/Images/Icons/hamMenuClose.png";
+        hamImg.src = "/HTML/Images/Icons/hamMenuClose.png";
         i++;
     }
     else{
-        hamImg.src = "/Images/Icons/hamMenu.png";
+        hamImg.src = "/HTML/Images/Icons/hamMenu.png";
         i++;
     }
 });

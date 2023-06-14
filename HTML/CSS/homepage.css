@@ -11,12 +11,11 @@
 }
 
 html {
-    font-size: 32px;
+    font-size: 40px;
 }
 
 body {
-    display: grid;
-    background-image: url("/Images/sky_bg.jpeg");
+    background-image: url("/HTML/Images/sky_bg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

@@ -2,33 +2,76 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300&display=swap'); /*content font*/
 
-body
-{ 
-    background-image: url("/home/karthik/SolarSystemProject/SolarSystem/HTML/Images/sky_bg.jpeg");
-    color:aliceblue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.head{
+
+html {
+    font-size: 40px;
+}
+
+body {
+    background-image: url("/HTML/Images/sky_bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+main {
+    display: grid;
+    row-gap: 3%;
+}
+
+section {
+    display: grid;
+    justify-items: center;
+    row-gap: 1%;
+}
+
+img{
+    max-width: 100%;
+}
+
+ol{
+    list-style:decimal inside;
+}
+
+ul{
+    list-style: inside;
+}
+
+.textAligner{
     text-align: center;
 }
 
-#back{
-    height: 3%;
-    width: 1.5%;
-    float:left;
-}
-
-#heading{
+.heading, .subHeading{
     font-family: 'Modern Antiqua', cursive;
-    font-size: 250%;
-    color: blueviolet;
     font-weight: bold;
-    text-align: center;
+    font-size: 1em;
+    justify-self: start;
+    margin: 1%;
 }
 
-#home{
-    height: 3%;
-    width: 1.5%;
-    float: right;
+
+.subHeading{
+    font-size: 0.8em;
+}
+
+.content {
+    font-family: 'Stoke', serif;
+    font-size: 0.6em;
+    text-align: justify;
+    margin: 1%;
+}
+
+@media (max-width: 630px) {
+
+    html {
+        font-size: 24px;
+    }
 }
 
 #pimg{
@@ -39,14 +82,8 @@ body
     transform: scale(0.45);
     filter: brightness(1.1);
     animation: rotation 150s infinite linear;
-}
-
-#content{
-    font-family: 'Stoke', serif;
-    text-align: justify;
-    font-size: 150%;
-}
-
+} 
+/* 
 table{
     margin:auto;
     font-size: 225%;
@@ -54,7 +91,7 @@ table{
     border-radius: 1%;
 }
 
-th, td{
+td{
     text-align: center;
     padding: 8px;
 }
@@ -64,17 +101,10 @@ th, td{
     font-size:x-large;
     background-color: unset;
     width: 100%;
-}
+} */
 
-
-ol, li{
-    padding-bottom: 1%;
-    text-align: justify;
-    font-size: 125%;
-    font-family: 'Stoke', serif;
-}
-
-#hac{ /*for homepage, asteroids & comets files*/
+/*
+#hac{ /*for homepage, asteroids & comets files
     height: 48%;
     width: 58%;
     display: block;
@@ -83,7 +113,7 @@ ol, li{
     margin-bottom: 1%;
     margin-top: 1%;
 }
-
+*/
 @keyframes rotation 
 {
     from
