@@ -2,50 +2,57 @@
 <head>
 <title>Solar System - Uranus</title>
 <link rel="stylesheet" type="text/css" href="CSS/planets.css">
+<style>
+    .heading,
+    .subHeading {
+        color: aquamarine;
+    }
+</style>
 </head>
 <body>
 
-<div class="head">
-    <a href="solarsystem.html" title="Go back to Solar System"><img id="back" src="Images/Icons/back.png"></a>
-    <span id="heading" style="color:aquamarine">URANUS - The Unimaginable</span>
-    <a href="homepage.html" title="Go back to Homepage"><img id="home" src="Images/Icons/home.png"></a>
-</div>
+    <header>
+        <p class="textAligner heading">URANUS - The Unimaginable</p>
+    </header>
 
-<img id="pimg" src="Images/uranus.png"> <br>
+    <main>
+        <section id="planetDataSection">
+            <img id="pimg" src="Images/uranus.png"> 
+            <table>
+                <tr>
+                    <th>Age</th>
+                    <td>:</td>
+                    <td>4.503 billion years</td>
+                </tr>
+                <tr>
+                    <th>Mass</th>
+                    <td>:</td>
+                    <td>8.6810x10<sup>25</sup> kg</td>
+                </tr>
+                <tr>
+                    <th>Diameter</th>
+                    <td>:</td>
+                    <td>51,118 km</td>
+                </tr>
+                <tr>
+                    <th>Distance from Sun</th>
+                    <td>:</td>
+                    <td>2.9 billion kilometers</td>
+                </tr>
+                <tr>
+                    <th>Temperature</th>
+                    <td>:</td>
+                    <td>-195°C</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <p class="content">Uranus is the only giant planet whose equator is nearly at right angles to its orbit. A collision with an Earth-sized object may explain the unique tilt. Nearly a twin in size to Neptune, Uranus has more methane in its mainly hydrogen and helium atmosphere than Jupiter or Saturn. Methane gives Uranus its blue tint.</p>
+        </section>
+        <section>
+            <p class="subHeading">10 Need-to-Know Things About the Uranus</p>
 
-<span id="content">Uranus is the only giant planet whose equator is nearly at right angles to its orbit. A collision with an Earth-sized object may explain the unique tilt. Nearly a twin in size to Neptune, Uranus has more methane in its mainly hydrogen and helium atmosphere than Jupiter or Saturn. Methane gives Uranus its blue tint.</span> <br><br>
-
-<table>
-    <tr>
-        <th>Age</th>
-        <td>:</td>
-        <td>4.503 billion years</td>
-    </tr>
-    <tr>
-        <th>Mass</th>
-        <td>:</td>
-        <td>8.6810x10<sup>25</sup> kg</td>
-    </tr>
-    <tr>
-        <th>Diameter</th>
-        <td>:</td>
-        <td>51,118 km</td>
-    </tr>
-    <tr>
-        <th>Distance from Sun</th>
-        <td>:</td>
-        <td>2.9 billion kilometers</td>
-    </tr>
-    <tr>
-        <th>Temperature</th>
-        <td>:</td>
-        <td>-195°C</td>
-    </tr>
-</table>
-
-<p id="heading"style="color:aquamarine">10 Need-to-Know Things About the Uranus</p>
-
-<ol>
+<ol class="content">
 <li>If the sun were as tall as a typical front door and Uranus would be about as big as a baseball.</li>
 <li><b>Uranus is the seventh planet</b> from the sun at a distance of about 2.9 billion km (1.8 billion miles) or 19.19 AU.</li>
 <li>One day on Uranus takes about 17 hours (the time it takes for Uranus to rotate or spin once). Uranus makes a complete orbit around the sun (a year in Uranian time) in about 84 Earth years.</li>
@@ -58,5 +65,7 @@
 <li>Like Venus, Uranus has a retrograde rotation (east to west). Unlike any of the other planets, Uranus rotates on its side, which means it spins horizontally.</li>
 </ol>
 
+        </section>
+    </main>
 </body>
 </html>

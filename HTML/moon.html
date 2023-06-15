@@ -2,50 +2,58 @@
 <head>
 <title>Solar System - Moon</title>
 <link rel="stylesheet" type="text/css" href="CSS/planets.css">
+<style>
+    .heading,
+        .subHeading {
+            color: silver;
+        }
+</style>
 </head>
 <body>
 
-<div class="head">
-    <a href="solarsystem.html" title="Go back to Solar System"><img id="back" src="Images/Icons/back.png"></a>
-    <span id="heading" style="color:silver">MOON - The Dried</span>
-    <a href="homepage.html" title="Go back to Homepage"><img id="home" src="Images/Icons/home.png"></a>
-</div>
+    <header>
+        <p class="textAligner heading">MOON - The Dried</p>
 
-<img id="pimg" src="Images/moon.png"> <br>
+    </header>
 
-<span id="content">Our moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate, and creating a tidal rhythm that has guided humans for thousands of years. The moon was likely formed after a Mars-sized body collided with Earth and the debris formed into the most prominent feature in our night sky. </span> <br><br>
+    <main>
+        <section  id="planetDataSection">
+            <img id="pimg" src="Images/moon.png"> 
+            <table>
+                <tr>
+                    <th>Age</th>
+                    <td>:</td>
+                    <td>4.53 billion years</td>
+                </tr>
+                <tr>
+                    <th>Mass</th>
+                    <td>:</td>
+                    <td>7.349x10<sup>22</sup> kg</td>
+                </tr>
+                <tr>
+                    <th>Diameter</th>
+                    <td>:</td>
+                    <td>3,474.8 km</td>
+                </tr>
+                <tr>
+                    <th>Distance from Earth</th>
+                    <td>:</td>
+                    <td>384,400 km</td>
+                </tr>
+                <tr>
+                    <th>Surface Temperature</th>
+                    <td>:</td>
+                    <td>106°C(Day), -183°C(Night)</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <p class="content">Our moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate, and creating a tidal rhythm that has guided humans for thousands of years. The moon was likely formed after a Mars-sized body collided with Earth and the debris formed into the most prominent feature in our night sky. </p> 
+        </section>
+        <section>
+            <p class="subHeading">10 Need-to-Know Things About the Moon</p>
 
-<table>
-    <tr>
-        <th>Age</th>
-        <td>:</td>
-        <td>4.53 billion years</td>
-    </tr>
-    <tr>
-        <th>Mass</th>
-        <td>:</td>
-        <td>7.349x10<sup>22</sup> kg</td>
-    </tr>
-    <tr>
-        <th>Diameter</th>
-        <td>:</td>
-        <td>3,474.8 km</td>
-    </tr>
-    <tr>
-        <th>Distance from Earth</th>
-        <td>:</td>
-        <td>384,400 km</td>
-    </tr>
-    <tr>
-        <th>Surface Temperature</th>
-        <td>:</td>
-        <td>106°C(Day), -183°C(Night)</td>
-    </tr>
-</table>
-
-<p id="heading" style="color:silver">10 Need-to-Know Things About the Moon</p>
-
-<ol>
+<ol class="content">
 <li>If the sun were as tall as a typical front door, Earth would be the size of a nickel and the moon would the size of a green pea.</li>
 <li><b>The moon is Earth's satellite</b> and orbits the Earth at a distance of about 384 thousand km (239 thousand miles) or 0.00257 AU. </li>
 <li>The moon makes a complete orbit around Earth in 27 Earth days and rotates or spins at that same rate, or in that same amount of time. This causes the moon to keep the same side or face towards Earth during the course of its orbit.</li>
@@ -57,6 +65,7 @@
 <li>The moon's weak atmosphere and its lack of liquid water cannot support life as we know it.</li>
 <li>Surface features that create the face known as the "Man in the moon" are impact basins on the moon that are filled with dark basalt rocks.</li>
 </ol>
-
+        </section>
+    </main>
 </body>
 </html>

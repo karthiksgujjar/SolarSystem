@@ -67,6 +67,20 @@ ul{
     margin: 1%;
 }
 
+#pimg{
+    max-width: 22.5%;
+    padding: 0.5%;
+    filter: brightness(1.1);
+    animation: rotation 150s infinite linear;
+}
+
+#planetDataSection{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 630px) {
 
     html {
@@ -74,21 +88,10 @@ ul{
     }
 }
 
-#pimg{
-    height: 45%;
-    width: 22.5%;
-    padding: 0.5%;
-    float: left;
-    transform: scale(0.45);
-    filter: brightness(1.1);
-    animation: rotation 150s infinite linear;
-} 
-/* 
 table{
-    margin:auto;
-    font-size: 225%;
+    font-size: 0.6em;
     background-color: rgba(66, 65, 65, 0.4);
-    border-radius: 1%;
+    border-radius: 2%;
 }
 
 td{
@@ -96,24 +99,6 @@ td{
     padding: 8px;
 }
 
-#none 
-{
-    font-size:x-large;
-    background-color: unset;
-    width: 100%;
-} */
-
-/*
-#hac{ /*for homepage, asteroids & comets files
-    height: 48%;
-    width: 58%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1%;
-    margin-top: 1%;
-}
-*/
 @keyframes rotation 
 {
     from

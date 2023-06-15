@@ -5,59 +5,63 @@
 <style>
 #spimg
 {
-    height: 35%;
-    width: 28%;
+    max-width: 28%;
     padding: 1%;
     float: left;
 }
+.heading,
+        .subHeading {
+            color: wheat;
+        }
 </style>
 </head>
 <body>
 
-<div class="head">
-    <a href="solarsystem.html" title="Go back to Solar System"><img id="back" src="Images/Icons/back.png"></a>
-    <span id="heading" style="color:wheat">SATURN - The Ring Master</span>
-    <a href="homepage.html" title="Go back to Homepage"><img id="home" src="Images/Icons/home.png"></a>
-</div>
+    <header>
+        <p class="textAligner heading">SATURN - The Ring Master</p>
+    </header>
 
-<img id="spimg" src="Images/saturn.png"> <br>
+    <main>
+        <section  id="planetDataSection">
+            <img id="spimg" src="Images/saturn.png">
+            <table>
+                <tr>
+                    <th>Age</th>
+                    <td>:</td>
+                    <td>4.503 billion years</td>
+                </tr>
+                <tr>
+                    <th>Mass</th>
+                    <td>:</td>
+                    <td>5.6846x10<sup>26</sup> kg</td>
+                </tr>
+                <tr>
+                    <th>Diameter</th>
+                    <td>:</td>
+            
+                    <td>120,660 km</td>
+                </tr>
+                <tr>
+                    <th>Distance from Sun</th>
+                    <td>:</td>
+            
+                    <td>1.4 billion kilometers</td>
+                </tr>
+                <tr>
+                    <th>Temperature</th>
+                    <td>:</td>
+            
+                    <td>-140°C</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <p class="content">Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. All four gas giant planets have rings -- made of chunks of ice and rock -- but none are as spectacular or as complicated as Saturn's. Like the other gas giants, Saturn is mostly a massive ball of hydrogen and helium.</p> 
+        </section>
+        <section>
+            <p class="subHeading">10 Need-to-Know Things About the Saturn</p>
 
-<span id="content">Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. All four gas giant planets have rings -- made of chunks of ice and rock -- but none are as spectacular or as complicated as Saturn's. Like the other gas giants, Saturn is mostly a massive ball of hydrogen and helium.</span> <br><br>
-
-<table>
-    <tr>
-        <th>Age</th>
-        <td>:</td>
-        <td>4.503 billion years</td>
-    </tr>
-    <tr>
-        <th>Mass</th>
-        <td>:</td>
-        <td>5.6846x10<sup>26</sup> kg</td>
-    </tr>
-    <tr>
-        <th>Diameter</th>
-        <td>:</td>
-
-        <td>120,660 km</td>
-    </tr>
-    <tr>
-        <th>Distance from Sun</th>
-        <td>:</td>
-
-        <td>1.4 billion kilometers</td>
-    </tr>
-    <tr>
-        <th>Temperature</th>
-        <td>:</td>
-
-        <td>-140°C</td>
-    </tr>
-</table>
-
-<p id="heading" style="color:wheat">10 Need-to-Know Things About the Saturn</p>
-
-<ol>
+<ol class="content">
 <li>If the sun were as tall as a typical front door and Saturn would be about as big as a basketball.</li>
 <li><b>Saturn is the sixth planet</b> from the sun at a distance of about 1.4 billion km (886 million miles) or 9.5 AU.</li>
 <li>One day on Saturn takes 10.7 hours (the time it takes for Saturn to rotate or spin once). Saturn makes a complete orbit around the sun (a year in Saturnian time) in 29 Earth years.</li>
@@ -70,5 +74,7 @@
 <li>When Galileo Galilei looked at Saturn through a telescope in the 1600s, he noticed strange objects on each side of the planet and drew in his notes a triple-bodied planet system and then later a planet with arms or handles. The handles turned out to be the rings of Saturn.</li>
 </ol>
 
+        </section>
+    </main>
 </body>
 </html>
