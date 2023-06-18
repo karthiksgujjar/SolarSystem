@@ -1,18 +1,23 @@
-const landscapeMode = window.matchMedia("(orientation: landscape)");
-const userAgent = navigator.userAgent;
+// const landscapeMode = window.matchMedia("(orientation: landscape)");
+// const userAgent = navigator.userAgent;
 
-let imageTag = document.createElement('img');
 
-const sunContainer = document.querySelector('.sunContainer');
-console.log(sunContainer);
+// landscapeMode.addEventListener('change', (e) => {
+//     if (e.matches && userAgent.includes("Mobile")) {
 
-landscapeMode.addEventListener('change', (e) => {
-    if (e.matches && userAgent.includes("Mobile")) {
+//         let planetContainer = document.querySelector('.sunContainer');
+//         let imageTag = document.createElement('img');
 
-        console.log(sunContainer.children[0].firstElementChild.remove());
-        imageTag.classList.add('sunImage');
-        imageTag.setAttribute('src', "Images/SolarSystem/Mobile/sun.png");
-        sunContainer.children[0].append(imageTag);
-
-    }
-})
+//         planetContainer.children[0].firstElementChild.remove();
+//         imageTag.id = "sunImage";
+//         imageTag.setAttribute('src', "Images/SolarSystem/Mobile/sun.png");
+//         planetContainer.children[0].append(imageTag);
+       
+//         planetContainer = document.querySelector('.mercuryContainer');
+//         // console.log(planetContainer.children[0].firstElementChild);
+//         planetContainer.children[0].firstElementChild.remove();
+//         imageTag.id = "mercuryImage";
+//         imageTag.setAttribute('src', "Images/SolarSystem/Mobile/mercury.png");
+//         planetContainer.children[0].append(imageTag);
+//     }
+// })

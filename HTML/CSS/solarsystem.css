@@ -13,11 +13,11 @@ body {
   position: fixed;
 }
 
-.posAbs{
+.posAbs {
   position: absolute;
 }
 
-#solarsystem{
+#solarsystem {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,82 +25,100 @@ body {
   height: 100dvh;
 }
 
-.sunContainer{
+.sunContainer {
   position: relative;
 }
-.sunImage {
-  animation: rotation 300s infinite linear; /*sun rotation*/
+
+#sunImage {
+  animation: rotation 300s infinite linear;
+  /*sun rotation*/
 }
 
-.mercuryContainer{
+.mercuryContainer {
   bottom: -5%;
   right: 5%;
 }
-.mercuryImage {
-  animation: rotation-1 80s infinite linear; /*mercury rotation*/
+
+#mercuryImage {
+  animation: rotation-1 80s infinite linear;
+  /*mercury rotation*/
 }
 
-.venusContainer{
+.venusContainer {
   top: -20%;
   right: -40%;
 }
-.venusImage {
-  animation: rotation-2 90s infinite linear; /*venus rotation*/
+
+#venusImage {
+  animation: rotation-2 90s infinite linear;
+  /*venus rotation*/
 }
 
-.earthContainer{
+.earthContainer {
   top: -50%;
   left: -30%;
 }
-.earthImage {
-  animation: rotation-3 60s infinite linear; /*earth rotation*/
+
+#earthImage {
+  animation: rotation-3 60s infinite linear;
+  /*earth rotation*/
 }
 
-.moonContainer{
+.moonContainer {
   top: -15%;
   right: 0%;
 }
-.moonImage {
-  animation: rotation-4 120s infinite linear; /*moon rotation*/
+
+#moonImage {
+  animation: rotation-4 120s infinite linear;
+  /*moon rotation*/
 }
 
-.marsContainer{
+.marsContainer {
   bottom: 0%;
   left: -75%;
 }
-.marsImage {
-  animation: rotation-5 70s infinite linear; /*mars rotation*/
+
+#marsImage {
+  animation: rotation-5 70s infinite linear;
+  /*mars rotation*/
 }
 
-.jupiterContainer{
+.jupiterContainer {
   bottom: -30%;
   right: -90%;
 }
-.jupiterImage {
-  animation: rotation-6 10s infinite linear; /*jupiter rotation*/
+
+#jupiterImage {
+  animation: rotation-6 10s infinite linear;
+  /*jupiter rotation*/
 }
 
-.saturnContainer{
+.saturnContainer {
   top: -50%;
   right: -180%;
 }
-.saturnImage {
-}
 
-.uranusContainer{
+#saturnImage {}
+
+.uranusContainer {
   top: -10%;
   left: -130%;
 }
-.uranusImage {
-  animation: rotation-7 40s infinite linear; /*uranus rotation*/
+
+#uranusImage {
+  animation: rotation-7 40s infinite linear;
+  /*uranus rotation*/
 }
 
-.neptuneContainer{
+.neptuneContainer {
   bottom: -50%;
   left: -190%;
 }
-.neptuneImage {
-  animation: rotation-8 50s infinite linear; /* neptune rotation */
+
+#neptuneImage {
+  animation: rotation-8 50s infinite linear;
+  /* neptune rotation */
 }
 
 @keyframes rotation {
@@ -195,31 +213,48 @@ body {
 
 @media (max-width:900px) {
 
-  .jupiterContainer{
+  .jupiterContainer {
     bottom: -100%;
     right: -70%;
   }
 
-  .saturnContainer{
+  .saturnContainer {
     top: -130%;
     right: -30%;
   }
 
-  .uranusContainer{
+  .uranusContainer {
     top: -160%;
     left: -60%;
   }
 
-  .neptuneContainer{
+  .neptuneContainer {
     bottom: -150%;
     left: -60%;
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
 
-  .jupiterContainer{
+  .jupiterContainer {
     bottom: -100%;
     right: -50%;
+  }
+}
+
+@media (orientation: landscape) and (max-width:900px) {
+  .saturnContainer {
+    top: -60%;
+    right: -150%;
+  }
+
+  .uranusContainer {
+    top: -10%;
+    left: -140%;
+  }
+
+  .neptuneContainer {
+    bottom: -130%;
+    left: -60%;
   }
 }
