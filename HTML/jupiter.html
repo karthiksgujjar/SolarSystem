@@ -1,7 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System - Jupiter</title>
-    <link rel="stylesheet" type="text/css" href="CSS/planets.css">
+    <link rel="stylesheet" type="text/css" href="CSS/homepage_planets.css">
     <style>
         .heading,
         .subHeading {
@@ -16,7 +19,11 @@
 
     <main>
         <section id="planetDataSection">
-            <img id="pimg" src="Images/jupiter.png">
+            <picture>
+                <source media="(max-width: 600px)" srcset="Images/SolarSystem/Individual/Mobile/jupiter.png">
+                <source media="(max-width: 900px)" srcset="Images/SolarSystem/Individual/Tablet/jupiter.png">
+                <img id="pimg" src="Images/SolarSystem/Individual/jupiter.png">
+            </picture>
             <table>
                 <tr>
                     <th>Age</th>

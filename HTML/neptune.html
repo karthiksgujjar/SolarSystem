@@ -1,8 +1,10 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System - Neptune</title>
-    <link rel="stylesheet" type="text/css" href="CSS/planets.css">
+    <link rel="stylesheet" type="text/css" href="CSS/homepage_planets.css">
     <style>
         .heading,
         .subHeading {
@@ -10,16 +12,17 @@
         }
     </style>
 </head>
-
 <body>
-
     <header>
         <p class="textAligner heading">NEPTUNE - The Farthest</p>
     </header>
-
     <main>
         <section  id="planetDataSection">
-            <img id="pimg" src="Images/neptune.png">
+            <picture>
+                <source media="(max-width: 600px)" srcset="Images/SolarSystem/Individual/Mobile/neptune.png">
+                <source media="(max-width: 900px)" srcset="Images/SolarSystem/Individual/Tablet/neptune.png">
+                <img id="pimg" src="Images/SolarSystem/Individual/neptune.png">
+            </picture>
             <table>
                 <tr>
                     <th>Age</th>
@@ -79,7 +82,5 @@
             </ol>
         </section>
     </main>
-
 </body>
-
 </html>

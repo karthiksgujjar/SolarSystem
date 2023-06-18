@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System - Home Page</title>
-    <link rel="stylesheet" type="text/css" href="CSS/homepage.css">
+    <link rel="stylesheet" type="text/css" href="CSS/homepage_planets.css">
     <script src="JavaScript/homepageScript.js" defer></script>
+    <style>
+        .subHeading {
+            color: blueviolet;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <p class="textAligner heading">Welcome to the Solar System</p>
+        <p class="textAligner heading indexHeading">Welcome to the Solar System</p>
         <button id="hamburgerMenu">
             <img id="hamImg" src="/HTML/Images/Icons/hamMenu.png">
         </button>
@@ -28,7 +31,7 @@
         <section>
             <p class="subHeading" style="margin-top: 2%;">Formation of our Solar System:</p>
             <a href="solarsystem.html" title="Click to enter Palace of Planets">
-                <img src="Images/miniss.gif" />
+                <img class="gifMaxW" src="Images/GIFs/miniss.gif" />
             </a>
             <p class="content">
                 The 'Solar System' was formed from a cloud of space dust and gas that was squeezed by a supernova
@@ -46,7 +49,7 @@
         </section>
         <section>
             <p class="subHeading">What is Big Bang Theory?</p>
-            <img src="Images/bigbang.gif">
+            <img class="gifMaxW" src="Images/GIFs/bigbang.gif">
             <p class="content">
                 According to Big Bang theory the universe was formed about 14 billion years ago as the result of a giant
                 explosion of very dense and hot matter. This matter expanded and started to cool down, going through

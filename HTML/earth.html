@@ -1,7 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System - Earth</title>
-    <link rel="stylesheet" type="text/css" href="CSS/planets.css">
+    <link rel="stylesheet" type="text/css" href="CSS/homepage_planets.css">
     <style>
         .heading, .subHeading {
             color: steelblue;
@@ -20,7 +23,11 @@
     </header>
     <main>
         <section id="planetDataSection">
-            <img id="pimg" src="Images/earth.png">
+            <picture>
+                <source media="(max-width: 600px)" srcset="Images/SolarSystem/Individual/Mobile/earth.png">
+                <source media="(max-width: 900px)" srcset="Images/SolarSystem/Individual/Tablet/earth.png">
+                <img id="pimg" src="Images/SolarSystem/Individual/earth.png">
+            </picture>
             <table>
                 <tr>
                     <th>Age</th>
@@ -90,21 +97,21 @@
             <table id="none">
                 <tr>
                     <th>
-                        <p style="color:darkorange;">Solar Eclipse</p>
+                        <p class="subHeading" style="color:darkorange;">Solar Eclipse</p>
                     </th>
                     <th>
-                        <p style="color:silver;">Lunar Eclipse</p>
+                        <p class="subHeading" style="color:silver;">Lunar Eclipse</p>
                     </th>
                 </tr>
                 <tr>
                     <td>
                         <a href="solareclipse.html" title="Click on this to know about Solar Eclipse">
-                            <img src="Images/SolarEclipse.png">
+                            <img class="gifMaxW" src="Images/SolarSystem/EarthEvents/SolarEclipse.png">
                         </a>
                     </td>
                     <td>
                         <a href="lunareclipse.html" title="Click on this to know about Lunar Eclipse">
-                            <img src="Images/LunarEclipse.png">
+                            <img class="gifMaxW" src="Images/SolarSystem/EarthEvents/LunarEclipse.png">
                         </a>
                     </td>
                 </tr>

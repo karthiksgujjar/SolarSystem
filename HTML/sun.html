@@ -1,8 +1,10 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System - Sun</title>
-    <link rel="stylesheet" type="text/css" href="CSS/planets.css">
+    <link rel="stylesheet" type="text/css" href="CSS/homepage_planets.css">
     <style>
         .heading,
         .subHeading {
@@ -10,16 +12,17 @@
         }
     </style>
 </head>
-
 <body>
-
     <header>
         <p class="textAligner heading">SUN - The Mighty</p>
     </header>
-
     <main>
         <section id="planetDataSection">
-            <img id="pimg" src="Images/sun.png">
+            <picture>
+                <source media="(max-width: 600px)" srcset="Images/SolarSystem/Individual/Mobile/sun.png">
+                <source media="(max-width: 900px)" srcset="Images/SolarSystem/Individual/Tablet/sun.png">
+                <img id="pimg" src="Images/SolarSystem/Individual/sun.png">
+            </picture>
             <table>
                 <tr>
                     <th>Age</th>
@@ -79,9 +82,7 @@
                 <li>The temperature at the sun's core is about 15 million degrees Celsius (27 million degrees
                     Fahrenheit).</li>
             </ol>
-
         </section>
     </main>
 </body>
-
 </html>

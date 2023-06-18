@@ -1,25 +1,28 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System - Mercury</title>
-    <link rel="stylesheet" type="text/css" href="CSS/planets.css">
+    <link rel="stylesheet" type="text/css" href="CSS/homepage_planets.css">
+    <style>
+        .heading,
+        .subHeading {
+            color: burlywood;
+        }
+    </style>
 </head>
-<style>
-    .heading,
-    .subHeading {
-        color: burlywood;
-    }
-</style>
-
 <body>
-
     <header>
         <p class="textAligner heading">MERCURY - The Brightest</p>
     </header>
-
     <main>
         <section id="planetDataSection">
-            <img id="pimg" src="Images/mercury.png">
+            <picture>
+                <source media="(max-width: 600px)" srcset="Images/SolarSystem/Individual/Mobile/mercury.png">
+                <source media="(max-width: 900px)" srcset="Images/SolarSystem/Individual/Tablet/mercury.png">
+                <img id="pimg" src="Images/SolarSystem/Individual/mercury.png">
+            </picture>
             <table>
                 <tr>
                     <th>Age</th>
@@ -83,5 +86,4 @@
         </section>
     </main>
 </body>
-
 </html>

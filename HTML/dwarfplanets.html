@@ -1,21 +1,26 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System - Dwarf Planets</title>
-    <link rel="stylesheet" type="text/css" href="CSS/planets.css">
+    <link rel="stylesheet" type="text/css" href="CSS/homepage_planets.css">
     <style>
-        #dwarfPlanetImages{
+        #dwarfPlanetImages {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap;
         }
+
         .dwarfPlanet {
-            max-width: 19%;
-            padding: 2%;
             filter: brightness(1.1);
             animation: rotation 200s infinite linear;
+            padding: 8px;
         }
 
-        .heading,.subHeading {
+        .heading,
+        .subHeading {
             color: darksalmon
         }
     </style>
@@ -25,15 +30,34 @@
     <header>
         <p class="textAligner heading">DWARF - The Granules</p>
     </header>
-
     <main>
         <section>
             <div id="dwarfPlanetImages">
-                <img class="dwarfPlanet" title="pluto" src="Images/pluto.png">
-                <img class="dwarfPlanet" title="Eris" src="Images/eris.png">
-                <img class="dwarfPlanet" title="Ceres" src="Images/ceres.png">
-                <img class="dwarfPlanet" title=" Makemake" src="Images/makemake.png">
-                <img class="dwarfPlanet" title="Haumea" src="Images/haumea.png">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="Images/DwarfPlanets/Mobile/pluto.png">
+                    <source media="(max-width: 900px)" srcset="Images/DwarfPlanets/Tablet/pluto.png">
+                    <img class="dwarfPlanet" title="Pluto" src="Images/DwarfPlanets/pluto.png" alt="Pluto Image">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="Images/DwarfPlanets/Mobile/eris.png">
+                    <source media="(max-width: 900px)" srcset="Images/DwarfPlanets/Tablet/eris.png">
+                    <img class="dwarfPlanet" title="Eris" src="Images/DwarfPlanets/eris.png" alt="Eris Image">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="Images/DwarfPlanets/Mobile/ceres.png">
+                    <source media="(max-width: 900px)" srcset="Images/DwarfPlanets/Tablet/ceres.png">
+                    <img class="dwarfPlanet" title="Ceres" src="Images/DwarfPlanets/ceres.png" alt="Ceres Image">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="Images/DwarfPlanets/Mobile/makemake.png">
+                    <source media="(max-width: 900px)" srcset="Images/DwarfPlanets/Tablet/makemake.png">
+                    <img class="dwarfPlanet" title=" Makemake" src="Images/DwarfPlanets/makemake.png" alt="Makemake Image">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="Images/DwarfPlanets/Mobile/haumea.png">
+                    <source media="(max-width: 900px)" srcset="Images/DwarfPlanets/Tablet/haumea.png">
+                    <img class="dwarfPlanet" title="Haumea" src="Images/DwarfPlanets/haumea.png" alt="Haumea Image">
+                </picture>
             </div>
 
             <p class="content">Dwarf planets are round and orbit the Sun just like the eight major planets. But unlike

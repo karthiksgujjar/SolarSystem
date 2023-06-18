@@ -1,15 +1,22 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System - Mars</title>
-    <link rel="stylesheet" type="text/css" href="CSS/planets.css">
+    <link rel="stylesheet" type="text/css" href="CSS/homepage_planets.css">
     <style>
         .heading,
         .subHeading {
             color: saddlebrown;
         }
-    </style>
 
+        .missionTableData th, .missionTableData td{
+            text-align: center;
+            border: 2px solid saddlebrown;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,8 +25,12 @@
     </header>
 
     <main>
-        <section  id="planetDataSection">
-            <img id="pimg" src="Images/mars.png">
+        <section id="planetDataSection">
+            <picture>
+                <source media="(max-width: 600px)" srcset="Images/SolarSystem/Individual/Mobile/mars.png">
+                <source media="(max-width: 900px)" srcset="Images/SolarSystem/Individual/Tablet/mars.png">
+                <img id="pimg" src="Images/SolarSystem/Individual/mars.png">
+            </picture>
             <table>
                 <tr>
                     <th>Age</th>
@@ -87,84 +98,88 @@
         </section>
         <section>
             <p class="heading">Some Important Missions</p>
-            <table border="1">
-                <tr>
-                    <th>SpaceCraft Name</th>
-                    <th>Organization</th>
-                    <th>Launch Date</th>
-                    <th>Type</th>
-                    <th>Status</th>
-                </tr>
+            <table class="content missionTableData">
+                <thead>
+                    <tr>
+                        <th>SpaceCraft Name</th>
+                        <th>Organization</th>
+                        <th>Launch Date</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mariner 4</td>
+                        <td title="National Aeronautics and Space Administration">NASA</td>
+                        <td>28 November 1964</td>
+                        <td>Flyby</td>
+                        <td>Success</td>
+                    </tr>
 
-                <tr>
-                    <td>Mariner 4</td>
-                    <td title="National Aeronautics and Space Administration">NASA</td>
-                    <td>28 November 1964</td>
-                    <td>Flyby</td>
-                    <td>Success</td>
-                </tr>
+                    <tr>
+                        <td colspan="5">First close-up images of Mars was received.</td>
+                    </tr>
 
-                <tr>
-                    <td colp="5">First close-up images of Mars was received.</td>
-                </tr>
+                    <tr>
+                        <td>Mariner 9</td>
+                        <td title="National Aeronautics and Space Administration">NASA</td>
+                        <td>30 May 1971</td>
+                        <td>Orbiter</td>
+                        <td>Success</td>
+                    </tr>
 
-                <tr>
-                    <td>Mariner 9</td>
-                    <td title="National Aeronautics and Space Administration">NASA</td>
-                    <td>30 May 1971</td>
-                    <td>Orbiter</td>
-                    <td>Success</td>
-                </tr>
+                    <tr>
+                        <td colspan="5">First spacecraft to orbit another planet.</td>
+                    </tr>
 
-                <tr>
-                    <td colp="5">First spacecraft to orbit another planet.</td>
-                </tr>
+                    <tr>
+                        <td>Viking 1</td>
+                        <td title="National Aeronautics and Space Administration">NASA</td>
+                        <td>20 August 1975</td>
+                        <td>Orbiter and Lander</td>
+                        <td>Success</td>
+                    </tr>
 
-                <tr>
-                    <td>Viking 1</td>
-                    <td title="National Aeronautics and Space Administration">NASA</td>
-                    <td>20 August 1975</td>
-                    <td>Orbiter and Lander</td>
-                    <td>Success</td>
-                </tr>
+                    <tr>
+                        <td colspan="5">The first successful Mars lander in history.</td>
+                    </tr>
 
-                <tr>
-                    <td colp="5">The first successful Mars lander in history.</td>
-                </tr>
+                    <tr>
+                        <td>Mars Pathfinder
+                            <hr>Sojourner
+                        </td>
+                        <td title="National Aeronautics and Space Administration">NASA</td>
+                        <td>4 December 1996</td>
+                        <td>Lander
+                            <hr>Rover
+                        </td>
+                        <td>Success</td>
+                    </tr>
 
-                <tr>
-                    <td>Mars Pathfinder
-                        <hr>Sojourner
-                    </td>
-                    <td title="National Aeronautics and Space Administration">NASA</td>
-                    <td>4 December 1996</td>
-                    <td>Lander
-                        <hr>Rover
-                    </td>
-                    <td>Success</td>
-                </tr>
+                    <tr>
+                        <td colspan="5">Sent with "Mars Pathfinder Lander" and became the first rover to operate outside
+                            the
+                            Earth-Moon system.
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td colp="5">Sent with "Mars Pathfinder Lander" and became the first rover to operate outside the
-                        Earth-Moon system.
-                    </td>
-                </tr>
+                    <tr>
+                        <td>Mangalyaan
+                            <hr>Mars Orbiter Mission
+                        </td>
+                        <td title="ndian Space Research Organisation">ISRO</td>
+                        <td>5 November 2013</td>
+                        <td>Orbiter</td>
+                        <td>In orbit</td>
+                    </tr>
 
-                <tr>
-                    <td>Mangalyaan
-                        <hr>Mars Orbiter Mission
-                    </td>
-                    <td title="ndian Space Research Organisation">ISRO</td>
-                    <td>5 November 2013</td>
-                    <td>Orbiter</td>
-                    <td>In orbit</td>
-                </tr>
-
-                <tr>
-                    <td colp="5">First Indian spacecraft to orbit another planet, studying Martian atmosphere;
-                        mineralogical
-                        mapping.</td>
-                </tr>
+                    <tr>
+                        <td colspan="5">First Indian spacecraft to orbit another planet, studying Martian atmosphere;
+                            mineralogical
+                            mapping.</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
     </main>

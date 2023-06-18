@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 #background-video {
   width: 100%;
   height: 100%;
@@ -9,98 +13,94 @@
   position: fixed;
 }
 
-body {
-  margin: 0;
+.posAbs{
+  position: absolute;
 }
 
-#sun {
-  position: absolute;
-  animation: rotation 300s infinite linear;
-  /*sun rotation*/
-  max-width: 20%;
-  left: 36%;
-  top: 30%;
-  filter: brightness(1.1);
-  image-rendering: crisp-edges;
+#solarsystem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
 }
 
-#mercury {
-  position: absolute;
-  animation: rotation-1 80s infinite linear;
-  /*mercury rotation*/
-  max-width: 3%;
-  top: 72%;
-  left: 50%;
+.sunContainer{
+  position: relative;
+}
+.sunImage {
+  animation: rotation 300s infinite linear; /*sun rotation*/
 }
 
-#venus {
-  position: absolute;
-  animation: rotation-2 90s infinite linear;
-  /*venus rotation*/
-  max-width: 6%;
-  top: 25%;
-  left: 60%;
+.mercuryContainer{
+  bottom: -5%;
+  right: 5%;
+}
+.mercuryImage {
+  animation: rotation-1 80s infinite linear; /*mercury rotation*/
 }
 
-#earth {
-  position: absolute;
-  animation: rotation-3 60s infinite linear;
-  /*earth rotation*/
-  max-width: 6.5%;
-  top: 5%;
-  left: 35%;
+.venusContainer{
+  top: -20%;
+  right: -40%;
+}
+.venusImage {
+  animation: rotation-2 90s infinite linear; /*venus rotation*/
 }
 
-#moon {
-  position: absolute;
-  animation: rotation-4 120s infinite linear;
-  /*moon rotation*/
-  max-width: 2%;
-  top: 3%;
-  left: 41%;
+.earthContainer{
+  top: -50%;
+  left: -30%;
+}
+.earthImage {
+  animation: rotation-3 60s infinite linear; /*earth rotation*/
 }
 
-#mars {
-  position: absolute;
-  animation: rotation-5 70s infinite linear;
-  /*mars rotation*/
-  max-width: 4.5%;
-  top: 56%;
-  left: 24%;
+.moonContainer{
+  top: -15%;
+  right: 0%;
+}
+.moonImage {
+  animation: rotation-4 120s infinite linear; /*moon rotation*/
 }
 
-#jupiter {
-  position: absolute;
-  animation: rotation-6 10s infinite linear;
-  /*jupiter rotation*/
-  max-width: 12%;
-  top: 62%;
-  left: 68%;
+.marsContainer{
+  bottom: 0%;
+  left: -75%;
+}
+.marsImage {
+  animation: rotation-5 70s infinite linear; /*mars rotation*/
 }
 
-#saturn {
-  position: absolute;
-  max-width: 22.5%;
-  top: 8%;
-  left: 76%;
+.jupiterContainer{
+  bottom: -30%;
+  right: -90%;
+}
+.jupiterImage {
+  animation: rotation-6 10s infinite linear; /*jupiter rotation*/
 }
 
-#uranus {
-  position: absolute;
-  animation: rotation-7 40s infinite linear;
-  /*uranus rotation*/
-  max-width: 10%;
-  top: 18%;
-  left: 12%;
+.saturnContainer{
+  top: -50%;
+  right: -180%;
+}
+.saturnImage {
 }
 
-#neptune {
-  position: absolute;
-  animation: rotation-8 50s infinite linear;
-  /* neptune rotation */
-  max-width: 9%;
-  top: 75%;
-  left: 3%;
+.uranusContainer{
+  top: -10%;
+  left: -130%;
+}
+.uranusImage {
+  animation: rotation-7 40s infinite linear; /*uranus rotation*/
+}
+
+.neptuneContainer{
+  bottom: -50%;
+  left: -190%;
+}
+.neptuneImage {
+  animation: rotation-8 50s infinite linear; /* neptune rotation */
 }
 
 @keyframes rotation {
@@ -190,5 +190,36 @@ body {
 
   to {
     -webkit-transform: rotate(360deg);
+  }
+}
+
+@media (max-width:900px) {
+
+  .jupiterContainer{
+    bottom: -100%;
+    right: -70%;
+  }
+
+  .saturnContainer{
+    top: -130%;
+    right: -30%;
+  }
+
+  .uranusContainer{
+    top: -160%;
+    left: -60%;
+  }
+
+  .neptuneContainer{
+    bottom: -150%;
+    left: -60%;
+  }
+}
+
+@media (max-width: 500px){
+
+  .jupiterContainer{
+    bottom: -100%;
+    right: -50%;
   }
 }

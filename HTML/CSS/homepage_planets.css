@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
-/*heading font*/
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap'); /*heading font*/
 
-@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300&display=swap');
-/*content font*/
+@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300&display=swap'); /*content font*/
 
 * {
     margin: 0;
@@ -11,17 +9,18 @@
 }
 
 html {
-    font-size: 40px;
+    font-size: 36px;
 }
 
 body {
-    background-image: url("/HTML/Images/sky_bg.jpeg");
+    background-image: url("/HTML/Images/Background/sky_bg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment:fixed;
     color: white;
 }
 
+/*homepage nav start*/
 nav {
     display: flex;
     justify-content: space-around;
@@ -44,6 +43,7 @@ nav a:hover {
     background-color: blueviolet;
     color: black;
 }
+/*homepage nav end*/
 
 main {
     display: grid;
@@ -56,10 +56,15 @@ section {
     row-gap: 1%;
 }
 
-img{
-    max-width: 100%;
+/* 10 need to know things start*/
+ol{
+    list-style:decimal inside;
 }
 
+ul{
+    list-style: inside;
+}
+/* 10 need to know things end*/
 
 .textAligner {
     text-align: center;
@@ -68,15 +73,13 @@ img{
 .heading, .subHeading{
     font-family: 'Modern Antiqua', cursive;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 1em;
     justify-self: start;
     margin: 1%;
 }
 
-
 .subHeading{
-    font-size: 0.7em;
-    color: blueviolet;
+    font-size: 0.8em;
 }
 
 .content {
@@ -86,6 +89,7 @@ img{
     margin: 1%;
 }
 
+/*hamburger menu for mobile devices*/
 #hamburgerMenu{
     display: none;
     position: absolute;
@@ -97,30 +101,70 @@ img{
     cursor: pointer;
 }
 
-@media (max-width: 630px) {
+.gifMaxW{
+    max-width: 100%;
+}
 
+/* planets specific start*/
+#pimg{
+    padding: 0.5%;
+    filter: brightness(1.1);
+    animation: rotation 150s infinite linear;
+}
+
+#planetDataSection{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+table{
+    font-size: 0.6em;
+    background-color: rgba(66, 65, 65, 0.4);
+    border-radius: 2%;
+    border-collapse: collapse;
+}
+
+td{
+    text-align: center;
+    padding: 8px;
+}
+/* planets specific end*/
+
+@keyframes rotation 
+{
+    from
+    { -webkit-transform: rotate(0deg); }
+    to
+    { -webkit-transform: rotate(360deg); }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
     html {
         font-size: 24px;
     }
-
     nav{
         display: none;
         flex-direction: column;
         align-items: center;
     }
-
     nav a{
         padding: 0.2em;
     }
-
     nav.active{
         display: flex;
     }
-
-    .textAligner{
+    .indexHeading{
         text-align: left;
+        font-size: 0.9em;
     }
-
     #hamburgerMenu{
         display: flex;
     }

@@ -1,8 +1,10 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System - Venus</title>
-    <link rel="stylesheet" type="text/css" href="CSS/planets.css">
+    <link rel="stylesheet" type="text/css" href="CSS/homepage_planets.css">
     <style>
         .heading,
         .subHeading {
@@ -10,16 +12,17 @@
         }
     </style>
 </head>
-
 <body>
-
     <header>
         <p class="textAligner heading">VENUS - The Hottest</p>
     </header>
-
     <main>
-        <section  id="planetDataSection">
-            <img id="pimg" src="Images/venus.png">
+        <section id="planetDataSection">
+            <picture>
+                <source media="(max-width: 600px)" srcset="Images/SolarSystem/Individual/Mobile/venus.png">
+                <source media="(max-width: 900px)" srcset="Images/SolarSystem/Individual/Tablet/venus.png">
+                <img id="pimg" src="Images/SolarSystem/Individual/venus.png">
+            </picture>
             <table>
                 <tr>
                     <th>Age</th>
@@ -56,8 +59,7 @@
         </section>
         <section>
             <p class="heading"">10 Need-to-Know Things About the Venus</p>
-
-<ol class=" content">
+            <ol class=" content">
                 <li>Venus is only a little smaller than Earth.</li>
                 <li><b>Venus is the second planet</b> from the sun at a distance of about 108 million km (67 million
                     miles) or 0.72 AU. </li>
@@ -76,10 +78,8 @@
                 </li>
                 <li>Venus spins backwards (retrograde rotation) when compared to the other planets. This means that the
                     sun rises in the west and sets in the east on Venus.</li>
-                </ol>
-
+            </ol>
         </section>
     </main>
 </body>
-
 </html>

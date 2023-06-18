@@ -1,50 +1,123 @@
 <!DOCTYPE html>
-<html>
-  <title>SOLAR SYSTEM</title>
+<html lang="en">
 <head>
-<link href="CSS/solarsystem.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOLAR SYSTEM</title>
+  <link href="CSS/solarsystem.css" rel="stylesheet" type="text/css">
+  <script src="JavaScript/orientationDetect.js" defer></script>
+  <style>
+    
+  </style>
 </head>
 <body>
 
-<video id="background-video" autoplay loop muted >
-  <source src="Video/mainpagebg.mp4" type="video/mp4">
-</video>
+  <video id="background-video" autoplay loop muted>
+    <source src="Video/mainpagebg.mp4" type="video/mp4">
+  </video>
 
-<a href="sun.html" title="Click on this to know about Sun">
-  <img id="sun" src="Images/sun.png">
-</a><a href="mercury.html" title="Click on this to know about Mercury"><img id="mercury" src="Images/mercury.png"></a>
+  <div id="solarsystem">
 
-<a href="venus.html" title="Click on this to know about Venus">
-  <img id="venus" src="Images/venus.png">
-</a>
+    <div class="sunContainer">
+      <a href="sun.html" title="Click on this to know about Sun">
+        <picture>
+          <source media="(max-width: 600px)" srcset="Images/SolarSystem/Mobile/sun.png">
+          <source media="(max-width: 900px)" srcset="Images/SolarSystem/Tablet/sun.png">
+          <img class="sunImage" src="Images/SolarSystem/sun.png">
+        </picture>
+      </a>
 
-<a href="earth.html" title="Click on this to know about Earth">
-  <img id="earth" src="Images/earth.png">
-</a>
+      <div class="mercuryContainer posAbs">
+        <a href="mercury.html" title="Click on this to know about Mercury">
+          <picture>
+            <source media="(max-width: 600px)" srcset="Images/SolarSystem/Mobile/mercury.png">
+            <source media="(max-width: 900px)" srcset="Images/SolarSystem/Tablet/mercury.png">
+            <img class="mercuryImage" src="Images/SolarSystem/mercury.png">
+          </picture>
+        </a>
+      </div>
 
-<a href="moon.html" title="Click on this to know about Moon">
-  <img id="moon" src="Images/moon.png">
-</a>
+      <div class="venusContainer posAbs">
+        <a href="venus.html" title="Click on this to know about Venus">
+          <picture>
+            <source media="(max-width: 600px)" srcset="Images/SolarSystem/Mobile/venus.png">
+            <source media="(max-width: 900px)" srcset="Images/SolarSystem/Tablet/venus.png">
+            <img class="venusImage" src="Images/SolarSystem/venus.png">
+          </picture>
+        </a>
+      </div>
+    
+      <div class="earthContainer posAbs">
+        <a href="earth.html" title="Click on this to know about Earth">
+          <picture>
+            <source media="(max-width: 600px)" srcset="Images/SolarSystem/Mobile/earth.png">
+            <source media="(max-width: 900px)" srcset="Images/SolarSystem/Tablet/earth.png">
+            <img class="earthImage" src="Images/SolarSystem/earth.png">
+          </picture>
+        </a>
+        <div class="moonContainer posAbs">
+          <a href="moon.html" title="Click on this to know about Moon">
+            <picture>
+              <source media="(max-width: 600px)" srcset="Images/SolarSystem/Mobile/moon.png">
+              <source media="(max-width: 900px)" srcset="Images/SolarSystem/Tablet/moon.png">
+              <img class="moonImage" src="Images/SolarSystem/moon.png">
+            </picture>
+          </a>
+        </div>
+      </div>
+    
+      <div class="marsContainer posAbs">
+        <a href="mars.html" title="Click on this to know about Mars">
+          <picture>
+            <source media="(max-width: 600px)" srcset="Images/SolarSystem/Mobile/mars.png">
+            <source media="(max-width: 900px)" srcset="Images/SolarSystem/Tablet/mars.png">
+            <img class="marsImage" src="Images/SolarSystem/mars.png">
+          </picture>
+        </a>
+      </div>
+    
+      <div class="jupiterContainer posAbs">
+        <a href="jupiter.html" title="Click on this to know about Jupiter">
+          <picture>
+            <source media="(max-width: 600px)" srcset="Images/SolarSystem/Mobile/jupiter.png">
+            <source media="(max-width: 900px)" srcset="Images/SolarSystem/Tablet/jupiter.png">
+            <img class="jupiterImage" src="Images/SolarSystem/jupiter.png">
+          </picture>
+        </a>
+      </div>
+    
+      <div class="saturnContainer posAbs">
+        <a href="saturn.html" title="Click on this to know about Saturn">
+          <picture>
+            <source media="(max-width: 600px)" srcset="Images/SolarSystem/Mobile/saturn.png">
+            <source media="(max-width: 900px)" srcset="Images/SolarSystem/Tablet/saturn.png">
+            <img class="saturnImage" src="Images/SolarSystem/saturn.png">
+          </picture>
+        </a>
+      </div>
+    
+      <div class="uranusContainer posAbs">
+        <a href="uranus.html" title="Click on this to know about Uranus">
+          <picture>
+            <source media="(max-width: 600px)" srcset="Images/SolarSystem/Mobile/uranus.png">
+            <source media="(max-width: 900px)" srcset="Images/SolarSystem/Tablet/uranus.png">
+            <img class="uranusImage" src="Images/SolarSystem/uranus.png">
+          </picture>
+        </a>
+      </div>
+    
+      <div class="neptuneContainer posAbs">
+        <a href="neptune.html" title="Click on this to know about Neptune">
+          <picture>
+            <source media="(max-width: 600px)" srcset="Images/SolarSystem/Mobile/neptune.png">
+            <source media="(max-width: 900px)" srcset="Images/SolarSystem/Tablet/neptune.png">
+            <img class="neptuneImage" src="Images/SolarSystem/neptune.png">
+          </picture>
+        </a>
+      </div>
 
-<a href="mars.html" title="Click on this to know about Mars">
-  <img id="mars" src="Images/mars.png">
-</a>
-
-<a href="jupiter.html" title="Click on this to know about Jupiter">
-  <img id="jupiter" src="Images/jupiter.png">
-</a>
-
-<a href="saturn.html" title="Click on this to know about Saturn">
-  <img id="saturn" src="Images/saturn.png">
-</a>
-
-<a href="uranus.html" title="Click on this to know about Uranus">
-  <img id="uranus" src="Images/uranus.png">
-</a>
-
-<a href="neptune.html" title="Click on this to know about Neptune">
-  <img id="neptune" src="Images/neptune.png">
-</a>
-
+    
+    </div>
+  </div>
 </body>
 </html>
