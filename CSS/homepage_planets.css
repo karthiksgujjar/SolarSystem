@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-image: url("/HTML/Images/Background/sky_bg.jpeg");
+    background-image: url("../Images/Background/sky_bg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
