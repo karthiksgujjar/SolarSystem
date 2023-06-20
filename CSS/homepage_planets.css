@@ -64,6 +64,10 @@ ol{
 ul{
     list-style: inside;
 }
+
+li{
+    padding-bottom: 1em;
+}
 /* 10 need to know things end*/
 
 .miniss{
