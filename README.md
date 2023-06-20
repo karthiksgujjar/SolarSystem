@@ -11,3 +11,5 @@
   * Changed the layout of the pages using grid and flexbox.
   * Added semantic tags to the site
   * Added reponsive images in the site.
+ 
+* Website is hosted at https://karthiksgujjar.github.io/SolarSystem/
