@@ -213,7 +213,12 @@ body {
   }
 }
 
-@media (max-width:900px) {
+@media (max-width:927px) {
+
+  .moonContainer {
+    top: -35%;
+    right: 0%;
+  }
 
   .jupiterContainer {
     bottom: -100%;
@@ -244,7 +249,7 @@ body {
   }
 }
 
-@media (orientation: landscape) and (max-width:900px) {
+@media (orientation: landscape) and (max-width:927px) {
   .saturnContainer {
     top: -60%;
     right: -150%;

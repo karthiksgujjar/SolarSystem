@@ -66,6 +66,11 @@ ul{
 }
 /* 10 need to know things end*/
 
+.miniss{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    border-radius: 1px;
+}
+
 .textAligner {
     text-align: center;
 }
@@ -166,6 +171,6 @@ td{
         font-size: 0.9em;
     }
     #hamburgerMenu{
-        display: flex;
+        display:block;
     }
 }
