@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-image: url("../Images/Background/sky_bg.jpeg"); /* Here ../ is being used because homepage_planets.css is inside CSS Directory and to access Images Directory we should go one folder back. ../ exactly goes back one folder back.*/
+    background-image: url("../Images/Background/sky_bg.webp"); /* Here ../ is being used because homepage_planets.css is inside CSS Directory and to access Images Directory we should go one folder back. ../ exactly goes back one folder back.*/
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
