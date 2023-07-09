@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 36px;
+}
 body {
   margin: 0;
   width: 100dvw;
@@ -37,8 +40,8 @@ body {
 }
 
 .mercuryContainer {
-  bottom: -5%;
-  right: 5%;
+  bottom: -1em;
+  right: 1em;
 }
 
 #mercuryImage {
@@ -47,8 +50,8 @@ body {
 }
 
 .venusContainer {
-  top: -20%;
-  right: -40%;
+  top: -1em;
+  right: -3em;
 }
 
 #venusImage {
@@ -57,8 +60,8 @@ body {
 }
 
 .earthContainer {
-  top: -50%;
-  left: -30%;
+  top: -4em;
+  left: -3em;
 }
 
 #earthImage {
@@ -67,8 +70,8 @@ body {
 }
 
 .moonContainer {
-  top: -15%;
-  right: 0%;
+  top: -1em;
+  right: 0em;
 }
 
 #moonImage {
@@ -77,8 +80,8 @@ body {
 }
 
 .marsContainer {
-  bottom: 0%;
-  left: -75%;
+  bottom: 1em;
+  left: -7em;
 }
 
 #marsImage {
@@ -87,8 +90,8 @@ body {
 }
 
 .jupiterContainer {
-  bottom: -30%;
-  right: -90%;
+  bottom: -4em;
+  right: -8em;
 }
 
 #jupiterImage {
@@ -97,15 +100,15 @@ body {
 }
 
 .saturnContainer {
-  top: -50%;
-  right: -180%;
+  top: -5em;
+  right: -15em;
 }
 
 #saturnImage {}
 
 .uranusContainer {
-  top: -10%;
-  left: -130%;
+  top: -1em;
+  left: -12em;
 }
 
 #uranusImage {
@@ -114,8 +117,8 @@ body {
 }
 
 .neptuneContainer {
-  bottom: -50%;
-  left: -190%;
+  bottom: -5em;
+  left: -16em;
 }
 
 #neptuneImage {
@@ -213,55 +216,48 @@ body {
   }
 }
 
-@media (max-width:927px) {
+@media (max-width: 927px) {
 
-  .moonContainer {
-    top: -35%;
-    right: 0%;
-  }
+  html {
+    font-size: 10px;
+}
+.jupiterContainer {
+  bottom: -12em;
+  right: -7em;
+}
 
-  .jupiterContainer {
-    bottom: -100%;
-    right: -70%;
-  }
+.saturnContainer {
+  top: -16em;
+  right: -7em;
+}
+
+.uranusContainer {
+  top: -22em;
+  left: -6em;
+}
+
+.neptuneContainer {
+  bottom: -22em;
+  left: 1em;
+}
+}
+
+/*Mobile Screen Landscape Mode*/
+@media (orientation: landscape) and (max-width: 927px) {
 
   .saturnContainer {
-    top: -130%;
-    right: -30%;
+    top: -10em;
+    right: -22em;
   }
 
   .uranusContainer {
-    top: -160%;
-    left: -60%;
+    top: -1em;
+    left: -20em;
   }
 
   .neptuneContainer {
-    bottom: -150%;
-    left: -60%;
+    bottom: -18em;
+    left: -10em;
   }
-}
-
-@media (max-width: 500px) {
-
-  .jupiterContainer {
-    bottom: -100%;
-    right: -50%;
-  }
-}
-
-@media (orientation: landscape) and (max-width:927px) {
-  .saturnContainer {
-    top: -60%;
-    right: -150%;
-  }
-
-  .uranusContainer {
-    top: -10%;
-    left: -140%;
-  }
-
-  .neptuneContainer {
-    bottom: -130%;
-    left: -60%;
-  }
+  
 }
